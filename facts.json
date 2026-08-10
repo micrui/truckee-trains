@@ -1345,6 +1345,21 @@
     "docs/walk.html"
    ],
    "notes": "WPRM hours/drive time not confirmed on official site; page directs readers to check hours."
+  },
+  {
+   "id": "twenty-mile-museum",
+   "claim": "The DSHS 20-Mile Museum is a series of roadside interpretive signs along old Highway 40 from Cisco Grove over Donner Summit; the road over the summit closes in storms.",
+   "status": "verified",
+   "sources": [
+    "https://www.donnersummithistoricalsociety.org/pages/20MileMuseum.html",
+    "https://roads.dot.ca.gov/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/walk.html"
+   ],
+   "notes": "An earlier draft said always open; corrected on maintainer's local knowledge that Donner Pass Road closes in winter storms."
   }
  ]
 }
