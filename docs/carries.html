@@ -1,0 +1,111 @@
+<meta charset="utf-8">
+<title>truckee-trains: what the line carries</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f6f7f9; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page: #0c0e11; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+      --muted: #898781; --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0c0e11; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+    --muted: #898781; --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page: #f6f7f9; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  }
+  body { background: var(--page); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6; margin: 0; padding: 48px 20px 72px; }
+  .wrap { max-width: 800px; margin: 0 auto; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+    margin: 0 0 10px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  .eyebrow a { color: inherit; }
+  h1 { font-size: clamp(26px, 4vw, 38px); font-weight: 700; letter-spacing: -0.02em; margin: 0 0 14px; }
+  .standfirst { font-size: 15.5px; color: var(--ink-2); max-width: 66ch; margin: 0 0 30px; }
+  h2 { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; margin: 40px 0 8px; }
+  p { max-width: 70ch; font-size: 15px; margin: 0 0 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; margin: 10px 0 6px; }
+  th { text-align: left; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+    font-weight: 600; padding: 6px 12px 6px 0; border-bottom: 1px solid var(--axis); }
+  th.num, td.num { text-align: right; }
+  td { padding: 6px 12px 6px 0; border-bottom: 1px solid var(--grid); vertical-align: top; font-variant-numeric: tabular-nums; }
+  .src { font-size: 12px; color: var(--muted); margin: 4px 0 0; max-width: 70ch; }
+  .src a { color: var(--muted); }
+  .table-scroll { overflow-x: auto; }
+  a { color: var(--accent); }
+  .foot { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--grid); color: var(--muted); font-size: 12.5px; max-width: 74ch; }
+</style>
+<div class="wrap">
+  <p class="eyebrow"><a href="./">truckee-trains</a> · what it carries</p>
+  <h1>What the line carries</h1>
+  <p class="standfirst">
+    Two ways over the same mountain: about fifteen freight trains a day on the rails, about
+    six and a half thousand trucks a day on the freeway beside them. This page keeps the
+    comparable facts in one place, including the studies that have never been done.
+  </p>
+
+  <h2>The mountain, by mode</h2>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Over Donner daily</th><th class="num">Count</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Freight trains</td><td class="num">≈ 15</td><td>Federal crossing inventory</td></tr>
+      <tr><td>Passenger trains</td><td class="num">2</td><td>Amtrak California Zephyr, one each way</td></tr>
+      <tr><td>Trucks on I-80 at Truckee</td><td class="num">≈ 6,500</td><td>Caltrans truck census, 2024</td></tr>
+      <tr><td>All vehicles on I-80 at Truckee</td><td class="num">≈ 37,000</td><td>Caltrans census, 2024</td></tr>
+    </tbody>
+  </table></div>
+  <p>The rail line has carried double-stacked containers since Union Pacific's 2009 tunnel
+  clearance project, which removed the last physical reason intermodal freight had to detour
+  around the Sierra. What share of the corridor's freight moves by each mode is not published
+  anywhere; the railroad releases no tonnage figures for the pass.</p>
+  <p class="src">Sources: <a href="https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx">FRA crossing inventory</a> ·
+  <a href="https://micrui.github.io/truckee-i80/funding.html">truckee-i80 (truck counts, with sources)</a> ·
+  <a href="https://www.uprr.com/newsinfo/releases/service/2009/1123_donnerpass.shtml">Union Pacific, 2009</a></p>
+
+  <h2>Riders at the Truckee station</h2>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Fiscal year</th><th class="num">Passengers</th></tr></thead>
+    <tbody>
+      <tr><td>2018</td><td class="num">15,251</td></tr>
+      <tr><td>2019</td><td class="num">15,104</td></tr>
+      <tr><td>2020</td><td class="num">9,138</td></tr>
+      <tr><td>2021</td><td class="num">5,759</td></tr>
+      <tr><td>2022</td><td class="num">10,179</td></tr>
+      <tr><td>2023</td><td class="num">8,560</td></tr>
+      <tr><td>2024</td><td class="num">14,755</td></tr>
+    </tbody>
+  </table></div>
+  <p>Roughly forty people a day, on average, board or leave the Zephyr in Truckee in a normal
+  year: a small number beside the freeway's, carried on two trains that also serve every town
+  between the Bay and Chicago. How reliably those two trains run is on the
+  <a href="status.html">status page</a>, from this site's own log.</p>
+  <p class="src">Source: <a href="https://www.railpassengers.org/site/assets/files/2567/tru.pdf">Rail Passengers Association, Truckee station statistics</a>.</p>
+
+  <h2>What has been studied, and what has not</h2>
+  <p>The planning record around this corridor is defined as much by its silences as its
+  documents, and both are facts:</p>
+  <p>The California State Rail Plan's vision reaches Reno from the Sacramento Valley by
+  connecting bus, not by train. The Capitol Corridor's long-range plans have examined a Reno
+  extension over this line without advancing it. No public agency has published a study of
+  diverting I-80 truck freight to rail over Donner, and no modern proposal exists to
+  electrify the line. Whether any of those things should exist is a policy question this site
+  does not answer; that none of them exists in the public record is simply the current state
+  of the record, stated so that local conversations can begin from it.</p>
+  <p class="src">Sources: <a href="https://dot.ca.gov/-/media/dot-media/programs/rail-mass-transportation/documents/california-state-rail-plan/2024-ca-state-rail-plan-a11y.pdf">California State Rail Plan</a> ·
+  <a href="https://www.capitolcorridor.org/vision-plan/">Capitol Corridor vision plans</a></p>
+
+  <div class="foot">
+    <p>No train-equals-so-many-trucks figure appears here because no citable one has been
+    verified for this line; when one is, it will carry its source. Corrections welcome via
+    <a href="https://github.com/micrui/truckee-trains">GitHub</a>.</p>
+  </div>
+</div>

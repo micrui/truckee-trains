@@ -1,0 +1,117 @@
+<meta charset="utf-8">
+<title>truckee-trains: the Bridge Street crossing</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f6f7f9; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page: #0c0e11; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+      --muted: #898781; --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0c0e11; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+    --muted: #898781; --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page: #f6f7f9; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  }
+  body { background: var(--page); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6; margin: 0; padding: 48px 20px 72px; }
+  .wrap { max-width: 800px; margin: 0 auto; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+    margin: 0 0 10px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  .eyebrow a { color: inherit; }
+  h1 { font-size: clamp(26px, 4vw, 38px); font-weight: 700; letter-spacing: -0.02em; margin: 0 0 14px; }
+  .standfirst { font-size: 15.5px; color: var(--ink-2); max-width: 66ch; margin: 0 0 30px; }
+  h2 { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; margin: 40px 0 8px; }
+  p { max-width: 70ch; font-size: 15px; margin: 0 0 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; margin: 10px 0 6px; }
+  th { text-align: left; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+    font-weight: 600; padding: 6px 12px 6px 0; border-bottom: 1px solid var(--axis); }
+  th.num, td.num { text-align: right; }
+  td { padding: 6px 12px 6px 0; border-bottom: 1px solid var(--grid); vertical-align: top; font-variant-numeric: tabular-nums; }
+  .src { font-size: 12px; color: var(--muted); margin: 4px 0 0; max-width: 70ch; }
+  .src a { color: var(--muted); }
+  .table-scroll { overflow-x: auto; }
+  a { color: var(--accent); }
+  .foot { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--grid); color: var(--muted); font-size: 12.5px; max-width: 74ch; }
+</style>
+<div class="wrap">
+  <p class="eyebrow"><a href="./">truckee-trains</a> · the crossing</p>
+  <h1>The Bridge Street crossing</h1>
+  <p class="standfirst">
+    Where downtown meets the main line. Bridge Street is the only place in Truckee where a
+    public road crosses the through tracks at grade, the only such crossing for about eight
+    miles in either direction, and by far the busiest on the mountain. Every horn heard
+    downtown is federal law executing at this spot.
+  </p>
+
+  <h2>The federal record</h2>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Field</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td>Crossing ID</td><td>753183A, Union Pacific Roseville Subdivision, milepost 206.05</td></tr>
+      <tr><td>Tracks</td><td>2 main, 1 siding, 1 other</td></tr>
+      <tr><td>Trains</td><td>8 by day, 7 by night: about 15 through trains every 24 hours</td></tr>
+      <tr><td>Road traffic</td><td>10,679 vehicles a day (2016 count)</td></tr>
+      <tr><td>Warning devices</td><td>Gates with lights</td></tr>
+      <tr><td>Horn status</td><td>No whistle ban: the horn rule applies in full</td></tr>
+    </tbody>
+  </table></div>
+  <p>For comparison, the nearest main-line grade crossings are Stampede Meadows Road, eight
+  miles east near Boca (1,193 vehicles a day), and Old Donner Summit Road, fourteen miles west
+  at Norden (30 vehicles a day). Every other road for the length of the mountain passes over or
+  under the tracks. The three other gated crossings inside Truckee (Donner Pass Road and two on
+  Church Street) reach only yard tracks, with zero through trains in the federal record. This
+  site pulls the Bridge Street record monthly and logs any change.</p>
+  <p class="src">Source: <a href="https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx">FRA National Highway-Rail Crossing Inventory</a>,
+  records 753183A, 753188J, 753180E, 972619C, 972654R, 972655X; the stored copy and change log
+  are in <a href="https://github.com/micrui/truckee-trains/tree/main/data/fra">the repository</a>.</p>
+
+  <h2>Why the horns sound</h2>
+  <p>Federal regulation requires every train to sound its horn on approach to every public
+  grade crossing: beginning 15 to 20 seconds out, in the pattern two longs, a short, and a
+  long, held until the locomotive occupies the crossing. The same rules set the horn's
+  loudness: no quieter than 96 and no louder than 110 decibels, measured 100 feet ahead of the
+  locomotive. The engineer has no discretion to skip it, and the railroad no authority to quiet
+  it. About fifteen times a day, seven of them at night, that regulation executes at Bridge
+  Street.</p>
+  <p class="src">Sources: <a href="https://www.law.cornell.edu/cfr/text/49/222.21">49 CFR § 222.21</a> ·
+  <a href="https://www.law.cornell.edu/cfr/text/49/229.129">49 CFR § 229.129</a></p>
+
+  <h2>The accident record</h2>
+  <p>The federal accident file for Bridge Street holds four incidents: January 1979, May 1981,
+  February 1985, and June 1991. All four involved automobiles, none injured anyone, property
+  damage ran $500 to $1,000, and all four occurred in the Southern Pacific era. In the
+  thirty-five years since 1991, no accident at this crossing has been reported to the FRA.
+  Stampede Meadows Road, with a fraction of the traffic, has seven on file through 2021.</p>
+  <p class="src">Source: <a href="https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx">FRA crossing accident reports</a> (Form 6180.57), file current to May 2026.</p>
+
+  <h2>The quiet zone project</h2>
+  <p>The horn can be silenced only one way: the Town can establish a quiet zone under the same
+  federal rule, by upgrading the crossing until the gates and engineering carry the safety
+  burden the horn now carries. The Town is pursuing exactly that. Its Reimagine Bridge Street
+  project lists designating a quiet zone as an explicit goal, alongside new vehicle and
+  pedestrian gates, a rebuilt crossing surface, and new signals at Bridge and Donner Pass Road
+  and Bridge and River Street. The council accepted grant funding for the roughly $6.3 million
+  project in August 2022 and awarded a design contract in January 2025. The quiet zone's own
+  cost and timeline are not yet public. This page tracks the project's record as it moves;
+  when the crossing's soundscape changes, the <a href="index.html">planned sensor log</a> will
+  have measured it before and after.</p>
+  <p class="src">Sources: <a href="https://www.townoftruckee.gov/194/Reimagine-Bridge-Street">Town of Truckee, Reimagine Bridge Street</a> ·
+  <a href="https://meetings.municode.com/PublishPage?cid=TRUCKEECA">Town council records</a> ·
+  <a href="https://www.cpuc.ca.gov/industries-and-topics/rail-safety/rail-crossings-and-engineering/quiet-zone">CPUC quiet zone process</a> ·
+  <a href="https://railroads.dot.gov/railroad-safety/divisions/crossing-safety-and-trespass-prevention/train-horn-rulequiet-zones">FRA train horn rule and quiet zones</a></p>
+
+  <div class="foot">
+    <p>Corrections welcome via <a href="https://github.com/micrui/truckee-trains">GitHub</a>.</p>
+  </div>
+</div>

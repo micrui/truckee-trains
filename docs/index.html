@@ -1,0 +1,115 @@
+<meta charset="utf-8">
+<title>truckee-trains</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f6f7f9; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page: #0c0e11; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+      --muted: #898781; --grid: #2c2c2a; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0c0e11; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+    --muted: #898781; --grid: #2c2c2a; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page: #f6f7f9; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  }
+  body {
+    background: var(--page); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6; margin: 0; padding: 56px 20px 72px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .eyebrow {
+    font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+    margin: 0 0 10px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  h1 { font-size: clamp(30px, 5vw, 42px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin: 0 0 18px; }
+  .mission { font-size: 17px; color: var(--ink-2); margin: 0 0 14px; max-width: 62ch; }
+  h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; margin: 42px 0 12px; }
+  .card {
+    display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+    padding: 16px 18px; margin: 0 0 12px; text-decoration: none; color: var(--ink);
+  }
+  .card:hover { border-color: var(--accent); }
+  .card .t { font-weight: 650; font-size: 16px; }
+  .card .t .tag {
+    font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+    font-weight: 600; margin-left: 8px; font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  .card .d { font-size: 14px; color: var(--ink-2); margin-top: 4px; }
+  p { max-width: 68ch; font-size: 15px; }
+  ul { max-width: 68ch; font-size: 15px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .foot { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--grid); color: var(--muted); font-size: 12.5px; max-width: 72ch; }
+</style>
+<div class="wrap">
+  <p class="eyebrow">truckee-trains · a public record</p>
+  <h1>The railroad through Truckee</h1>
+  <p class="mission">
+    The oldest piece of infrastructure in town is the least legible. A horn sounds at three in
+    the morning and there is no way to learn what it was; the federal record says about fifteen
+    trains cross Donner Pass every day, and the railroad publishes nothing. This site collects
+    what can be known: what passed, how the passenger train is running, what governs the
+    downtown crossing, how the line got here, and who built it.
+  </p>
+  <p class="mission">
+    Built by a Truckee resident from public records, every number traceable to its source.
+    A sibling of <a href="https://micrui.github.io/truckee-flights">truckee-flights</a> and
+    <a href="https://micrui.github.io/truckee-i80">truckee-i80</a>.
+  </p>
+
+  <h2>Pages</h2>
+  <a class="card" href="status.html">
+    <div class="t">The Zephyr at Truckee <span class="tag">updated half-hourly</span></div>
+    <div class="d">Scheduled against actual times for Amtrak's two daily stops, and the accumulating punctuality record.</div>
+  </a>
+  <a class="card" href="crossing.html">
+    <div class="t">The Bridge Street crossing</div>
+    <div class="d">The only main-line grade crossing in town: its federal record, why the horns sound, and the Town's quiet zone project.</div>
+  </a>
+  <a class="card" href="history.html">
+    <div class="t">How the railroad got here</div>
+    <div class="d">From hand-drilled granite in 1867 to double-stack containers in 2009, dated and sourced.</div>
+  </a>
+  <a class="card" href="built.html">
+    <div class="t">Who built it, and who keeps it open</div>
+    <div class="d">The Chinese workforce that cut the pass, what Truckee did afterward, and the crews that fight the snow today.</div>
+  </a>
+  <a class="card" href="carries.html">
+    <div class="t">What the line carries</div>
+    <div class="d">Trains beside trucks, riders by year, and what has and has not been studied about moving more over the mountain by rail.</div>
+  </a>
+  <a class="card" href="links.html">
+    <div class="t">Watching the trains</div>
+    <div class="d">The live cams, radio feed, archives, and local societies that already watch this line, all verified working.</div>
+  </a>
+
+  <h2>Data this site collects</h2>
+  <ul>
+    <li><strong>Zephyr punctuality</strong>: scheduled versus actual times at the Truckee
+    station, polled half-hourly, accumulating in the open in the
+    <a href="https://github.com/micrui/truckee-trains">repository</a>.</li>
+    <li><strong>The crossing's federal record</strong>: the Bridge Street inventory entry,
+    pulled monthly, with every change logged.</li>
+    <li><strong>Per-train log</strong>: planned. A calibrated home sensor will time, count, and
+    measure the sound of every passage, publishing numbers only. Until then the freight record
+    is the federal count, and this site says so rather than guessing.</li>
+  </ul>
+
+  <div class="foot">
+    <p>Maintained by a Truckee resident. Not affiliated with Union Pacific, Amtrak, the FRA,
+    or the Town of Truckee. Corrections welcome via
+    <a href="https://github.com/micrui/truckee-trains">GitHub</a>.</p>
+  </div>
+</div>

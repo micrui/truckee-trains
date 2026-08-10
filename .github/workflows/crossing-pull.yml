@@ -1,0 +1,25 @@
+name: crossing-pull
+on:
+  schedule:
+    - cron: "0 15 3 * *"
+  workflow_dispatch:
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull crossing record
+        run: python3 crossing_pull.py
+      - name: Commit
+        run: |
+          git config user.name "truckee-trains poller"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/fra
+          git pull --rebase --autostash -q || true
+          git diff --cached --quiet || git commit -m "FRA crossing record: $(date -u +%F)"
+          git push

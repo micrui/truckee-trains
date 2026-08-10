@@ -1,0 +1,92 @@
+<meta charset="utf-8">
+<title>truckee-trains: watching the trains</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f6f7f9; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page: #0c0e11; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+      --muted: #898781; --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0c0e11; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+    --muted: #898781; --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --accent: #3987e5;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page: #f6f7f9; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  }
+  body { background: var(--page); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6; margin: 0; padding: 48px 20px 72px; }
+  .wrap { max-width: 800px; margin: 0 auto; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+    margin: 0 0 10px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  .eyebrow a { color: inherit; }
+  h1 { font-size: clamp(26px, 4vw, 38px); font-weight: 700; letter-spacing: -0.02em; margin: 0 0 14px; }
+  .standfirst { font-size: 15.5px; color: var(--ink-2); max-width: 66ch; margin: 0 0 30px; }
+  h2 { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; margin: 40px 0 8px; }
+  p { max-width: 70ch; font-size: 15px; margin: 0 0 12px; }
+  ul { max-width: 70ch; font-size: 15px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  .foot { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--grid); color: var(--muted); font-size: 12.5px; max-width: 74ch; }
+</style>
+<div class="wrap">
+  <p class="eyebrow"><a href="./">truckee-trains</a> · links</p>
+  <h1>Watching the trains</h1>
+  <p class="standfirst">
+    The people who already watch this line, and the tools they use. Every link below was
+    verified working; dead and paywalled resources are left off.
+  </p>
+
+  <h2>Live</h2>
+  <ul>
+    <li><a href="https://tdrrs.org/traincam">Truckee Donner Railroad Society train cam</a>:
+    live view from a caboose beside the line, with railroad radio audio.</li>
+    <li><a href="https://hdontap.com/stream/657648/downtown-truckee-california-live-webcam/">Downtown
+    Truckee webcam</a>: cycles views including the Bridge Street crossing.</li>
+    <li><a href="https://www.broadcastify.com/listen/feed/43410">Railroad radio, Donner Pass</a>:
+    the live dispatch and road channels for the line, received in Truckee. Listening is free;
+    the feed's terms restrict rebroadcast, so it is linked here rather than embedded.</li>
+    <li><a href="https://maps.amtrak.com/services/MapDataService/trains/getTrainsData">Amtrak's
+    live map</a> (or this site's <a href="status.html">Truckee log</a> of it).</li>
+  </ul>
+
+  <h2>History and archives</h2>
+  <ul>
+    <li><a href="https://www.donnersummithistoricalsociety.org/pages/Newsletters.html">Donner
+    Summit Historical Society, the Heirloom</a>: eighteen years of monthly local history,
+    much of it railroad, free PDFs with an article index.</li>
+    <li><a href="https://www.truckeehistory.org/railroading.html">Truckee-Donner Historical
+    Society</a>: the town-side railroad story and a large online photo library.</li>
+    <li><a href="https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/">Pacific
+    Southwest Railway Historical Society</a>: the best free chronology of the Donner route.</li>
+    <li><a href="https://wx4.org/to/foam/maps/and_SouthernPacificTimetables.html">Historic
+    employee timetables</a>: Southern Pacific Sacramento Division, 1893 to 1980.</li>
+    <li><a href="https://www.californiarailroad.museum/visit/library">California State Railroad
+    Museum library</a>: the deep archive, including Southern Pacific corporate records; by
+    appointment.</li>
+    <li><a href="https://www.abandonedrails.com/donner-pass">The abandoned 1868 summit track</a>,
+    now the tunnel hike.</li>
+  </ul>
+
+  <h2>Community</h2>
+  <ul>
+    <li><a href="https://tdrrs.org/">Truckee Donner Railroad Society</a>: the local society,
+    museum, and rotary snowplow display.</li>
+    <li><a href="https://www.trainorders.com/">Trainorders</a>: where the people who know this
+    line hour by hour post about it; reading is free.</li>
+  </ul>
+
+  <div class="foot">
+    <p>Corrections and suggestions welcome via
+    <a href="https://github.com/micrui/truckee-trains">GitHub</a>.</p>
+  </div>
+</div>
