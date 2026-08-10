@@ -43,3 +43,11 @@ Same rules as truckee-flights and truckee-i80:
 - Stdlib-only Python; hand-written HTML in `/docs` on the shared CSS token set.
 - Hold pushes until coherent; verify locally; single push.
 - No credentials of any kind are needed for the sources above; keep it that way.
+
+## The fact registry
+
+`facts.json` is the canonical record of every factual claim on the site: status
+(verified | sourced | contested | held), sources, method, check date, and the pages that
+state it. Pages must never claim what the registry does not hold; corrections fix both,
+together, in one commit. `python3 factcheck.py` validates the registry and flags facts
+unchecked for 180 days. The `/fact-vet` skill runs the full verification ritual.
