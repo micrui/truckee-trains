@@ -1,4 +1,4 @@
-# CLAUDE.md — truckee-trains
+# CLAUDE.md: truckee-trains
 
 Public record of the railroad through Truckee: the Union Pacific line over Donner Pass, its
 history, governance (including train-horn rules and the federal Quiet Zone process), traffic,
@@ -13,19 +13,21 @@ Same rules as truckee-flights and truckee-i80:
 - **Falsifiability is the admission criterion.** Unfalsifiable claims appear only as attributed
   statements. Political questions stay open; the site supplies the record.
 - No self-referential neutrality statements, no apologetic framing, no editorializing labels.
+- No em-dashes anywhere, in site prose or repo docs. Use commas, colons, semicolons,
+  parentheses, or a new sentence.
 - Every number traces to a linked source. Corrections are dated addenda, never silent.
 
 ## Planned structure (reference-first)
 
-- **Governance page** — who controls the railroad: federal preemption (FRA/STB), the train-horn
+- **Governance page**: who controls the railroad. Federal preemption (FRA/STB), the train-horn
   rule (49 CFR Part 222) and what a Quiet Zone actually requires, Union Pacific's ownership,
   what the Town of Truckee can and cannot decide. This is the centerpiece.
-- **History page** — sourced timeline: Central Pacific construction and the summit tunnels,
+- **History page**: sourced timeline. Central Pacific construction and the summit tunnels,
   snowsheds, the 1925/1993 track changes, Amtrak's California Zephyr, the 2000s tunnel
   abandonment over the historic pass.
-- **Safety page** — FRA crossing inventory and accident record for Truckee-area crossings.
-- **Traveler links** — Amtrak schedules/status, UP public resources; links only, no dashboards.
-- **Per-train log** — dark until home station hardware exists (see truckee-station);
+- **Safety page**: FRA crossing inventory and accident record for Truckee-area crossings.
+- **Traveler links**: Amtrak schedules/status, UP public resources; links only, no dashboards.
+- **Per-train log**: dark until home station hardware exists (see truckee-station);
   no public per-train data source matches the fidelity the other sites' logs have.
 
 ## Data sources to use

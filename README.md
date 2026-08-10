@@ -2,7 +2,7 @@
 
 A public record of the railroad through Truckee, California: the Union Pacific main line over
 Donner Pass. History, governance (including the federal rules that decide where train horns
-sound), traffic, and the official accident record — every claim traceable to its source.
+sound), traffic, and the official accident record, every claim traceable to its source.
 
 Sibling projects: [truckee-flights](https://github.com/micrui/truckee-flights) (the airport),
 [truckee-i80](https://github.com/micrui/truckee-i80) (the freeway).
