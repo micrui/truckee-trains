@@ -1,755 +1,1350 @@
 {
-  "updated": "2026-08-10",
-  "facts": [
-    {
-      "id": "fra-crossing-id",
-      "claim": "The Bridge Street crossing is FRA crossing 753183A on the Union Pacific Roseville Subdivision at milepost 206.05.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx", "https://github.com/micrui/truckee-trains/tree/main/data/fra"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": "Confirmed against own stored copy data/fra/crossing-753183A.json, pulled monthly with change log."
-    },
-    {
-      "id": "fra-crossing-tracks",
-      "claim": "The federal inventory records 2 main tracks, 1 siding, and 1 other track at the Bridge Street crossing.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx", "https://github.com/micrui/truckee-trains/tree/main/data/fra"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "fra-daily-train-count",
-      "claim": "The federal crossing inventory records 8 day trains and 7 night trains, about 15 through trains every 24 hours including the two Zephyrs, at Bridge Street.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx", "https://github.com/micrui/truckee-trains/tree/main/data/fra"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/index.html", "docs/status.html", "docs/crossing.html", "docs/history.html", "docs/carries.html"],
-      "notes": "The site consistently uses the federal 15/day figure, not the 15-18 press quote (held; see trains-15-18-press-quote)."
-    },
-    {
-      "id": "fra-crossing-aadt-2016",
-      "claim": "The Bridge Street crossing carries 10,679 vehicles a day per the 2016 count in the federal inventory.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx", "https://github.com/micrui/truckee-trains/tree/main/data/fra"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "fra-warning-devices",
-      "claim": "The Bridge Street crossing is protected by gates with lights per the federal inventory.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx", "https://github.com/micrui/truckee-trains/tree/main/data/fra"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "fra-no-whistle-ban",
-      "claim": "The federal inventory records no whistle ban at Bridge Street, so the train horn rule applies in full.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx", "https://github.com/micrui/truckee-trains/tree/main/data/fra"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "only-grade-crossing-in-town",
-      "claim": "Bridge Street is the only public road crossing of the through tracks at grade in Truckee, and the only such crossing for about eight miles in either direction.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/index.html", "docs/crossing.html"],
-      "notes": "Confirmed via the nearest-crossing records (Stampede Meadows Road east, Old Donner Summit Road west)."
-    },
-    {
-      "id": "stampede-meadows-crossing",
-      "claim": "The nearest main-line grade crossing to the east is Stampede Meadows Road, eight miles away near Boca, with 1,193 vehicles a day.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "old-donner-summit-crossing",
-      "claim": "The nearest main-line grade crossing to the west is Old Donner Summit Road, fourteen miles away at Norden, with 30 vehicles a day.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "yard-crossings-zero-trains",
-      "claim": "Truckee's three other gated crossings (Donner Pass Road and two on Church Street) reach only yard tracks and show zero through trains in the federal record.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "horn-rule-pattern",
-      "claim": "Federal regulation 49 CFR 222.21 requires the horn to begin 15 to 20 seconds before every public grade crossing, in the pattern two longs, a short, and a long, held until the locomotive occupies the crossing, with no engineer discretion to skip it.",
-      "status": "verified",
-      "sources": ["https://www.law.cornell.edu/cfr/text/49/222.21"],
-      "method": "primary-document",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": "Page also states the narrow exception: a train stopped close to a crossing may sound less than the full warning."
-    },
-    {
-      "id": "horn-rule-loudness",
-      "claim": "Federal regulation 49 CFR 229.129 sets the horn's loudness at no quieter than 96 and no louder than 110 decibels, measured 100 feet ahead of the locomotive.",
-      "status": "verified",
-      "sources": ["https://www.law.cornell.edu/cfr/text/49/229.129"],
-      "method": "primary-document",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "accident-record-four-incidents",
-      "claim": "The FRA accident file for Bridge Street holds four incidents (January 1979, May 1981, February 1985, June 1991), all involving automobiles, none with injuries, property damage $500 to $1,000, all in the Southern Pacific era.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": "Form 6180.57 reports; file current to May 2026."
-    },
-    {
-      "id": "no-accidents-since-1991",
-      "claim": "No accident at the Bridge Street crossing has been reported to the FRA in the thirty-five years since June 1991.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": "A verified negative: absence of reports in the federal accident file, current to May 2026."
-    },
-    {
-      "id": "stampede-accidents-seven",
-      "claim": "Stampede Meadows Road has seven accidents on file with the FRA through 2021.",
-      "status": "sourced",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": "Not in today's verified list; drawn from the same FRA accident file as the Bridge Street record."
-    },
-    {
-      "id": "quiet-zone-only-remedy",
-      "claim": "The horn at Bridge Street can be silenced only by the Town establishing a quiet zone under the federal train horn rule, by upgrading the crossing until engineering carries the safety burden.",
-      "status": "sourced",
-      "sources": ["https://railroads.dot.gov/railroad-safety/divisions/crossing-safety-and-trespass-prevention/train-horn-rulequiet-zones", "https://www.cpuc.ca.gov/industries-and-topics/rail-safety/rail-crossings-and-engineering/quiet-zone"],
-      "method": "primary-document",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "reimagine-bridge-street-goal",
-      "claim": "The Town of Truckee's Reimagine Bridge Street project lists designating a quiet zone as an explicit goal, alongside new vehicle and pedestrian gates, a rebuilt crossing surface, and new signals at Bridge/Donner Pass Road and Bridge/River Street.",
-      "status": "sourced",
-      "sources": ["https://www.townoftruckee.gov/194/Reimagine-Bridge-Street"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "qz-grant-authorization-2022",
-      "claim": "The Truckee town council authorized grant applications toward the roughly $6.3 million Reimagine Bridge Street project in August 2022.",
-      "status": "sourced",
-      "sources": ["https://meetings.municode.com/PublishPage?cid=TRUCKEECA", "https://www.townoftruckee.gov/194/Reimagine-Bridge-Street"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "qz-design-contract-2025",
-      "claim": "The Town awarded a design contract for the Bridge Street crossing project in January 2025.",
-      "status": "sourced",
-      "sources": ["https://meetings.municode.com/PublishPage?cid=TRUCKEECA"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": ""
-    },
-    {
-      "id": "qz-component-cost-unknown",
-      "claim": "The quiet zone component's own cost and timeline are not yet public.",
-      "status": "held",
-      "sources": ["https://www.townoftruckee.gov/194/Reimagine-Bridge-Street"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/crossing.html"],
-      "notes": "SPEC.md held claim: quiet zone component cost not yet public; the ledger tracks it. Page states the unknown rather than a number."
-    },
-    {
-      "id": "cp-construction-1863-68",
-      "claim": "The Central Pacific built east from Sacramento into the Sierra between 1863 and 1868, and Truckee grew up around the railroad's yards, ice houses, and mills.",
-      "status": "sourced",
-      "sources": ["https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/", "https://www.truckeehistory.org/railroading.html"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": ""
-    },
-    {
-      "id": "summit-tunnel-opened-1867",
-      "claim": "The Summit Tunnel at Donner Pass, hand-drilled through granite from four faces at once, opened November 30, 1867.",
-      "status": "verified",
-      "sources": ["https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/", "https://www.pbs.org/wgbh/americanexperience/features/tcrr-tunneling-sierra-nevada/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html", "docs/built.html"],
-      "notes": ""
-    },
-    {
-      "id": "track-reached-truckee-1868",
-      "claim": "Track reached the Truckee River canyon and the settlement that became Truckee in 1868.",
-      "status": "verified",
-      "sources": ["https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/", "https://www.truckeehistory.org/railroading.html"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": "Verification confirmed the specific date April 3, 1868; the page states the year only."
-    },
-    {
-      "id": "golden-spike-1869",
-      "claim": "The golden spike joined the Central Pacific and Union Pacific at Promontory on May 10, 1869, making Donner Pass the mountain gateway of the first transcontinental railroad.",
-      "status": "sourced",
-      "sources": ["https://www.nps.gov/gosp/index.htm"],
-      "method": "agency-record",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": ""
-    },
-    {
-      "id": "snowsheds-extent",
-      "claim": "Wooden snowsheds built from the 1860s-70s eventually roofed tens of miles of mountain track and made year-round operation over the pass possible.",
-      "status": "verified",
-      "sources": ["https://www.donnersummithistoricalsociety.org/pages/Newsletters.html"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": "Verification confirmed roughly 40 miles of sheds at peak; the page says tens of miles."
-    },
-    {
-      "id": "sp-surveys-1901",
-      "claim": "In the early Southern Pacific era, surveys for a long summit tunnel and for electrification were studied and shelved.",
-      "status": "verified",
-      "sources": ["https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": "Verification placed the surveys in 1901-02."
-    },
-    {
-      "id": "cab-forwards-from-1910",
-      "claim": "From 1910 the cab-forward steam locomotives, built backward so crews would not suffocate in the snowsheds, took over the mountain.",
-      "status": "verified",
-      "sources": ["https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": ""
-    },
-    {
-      "id": "tunnel-41-1925",
-      "claim": "A second track over the summit opened in 1925, carried through the two-mile Tunnel 41 under Mount Judah, making the mountain a double-track railroad.",
-      "status": "verified",
-      "sources": ["https://en.wikipedia.org/wiki/Tunnel_No._41", "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": "Verification confirmed Tunnel 41 length as 10,322 feet, consistent with the page's two-mile description."
-    },
-    {
-      "id": "steam-end-1957-1958",
-      "claim": "The last cab-forward crossed Donner in 1957 and the final steam excursion ran in October 1958; diesels have run the pass since.",
-      "status": "verified",
-      "sources": ["https://www.californiarailroad.museum/store/product/last-run-of-a-cab-forward-over-donner-pass", "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": ""
-    },
-    {
-      "id": "surviving-cab-forward-csrm",
-      "claim": "The sole surviving cab-forward locomotive stands in the California State Railroad Museum.",
-      "status": "sourced",
-      "sources": ["https://www.californiarailroad.museum/store/product/last-run-of-a-cab-forward-over-donner-pass"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": ""
-    },
-    {
-      "id": "zephyr-renamed-1983",
-      "claim": "Amtrak's train over Donner, until then the San Francisco Zephyr, was renamed the California Zephyr in 1983 when its mid-route alignment shifted to Colorado.",
-      "status": "verified",
-      "sources": ["https://en.wikipedia.org/wiki/San_Francisco_Zephyr", "https://en.wikipedia.org/wiki/California_Zephyr"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": "Verification confirmed the renaming took effect July 1983; the page states the year only."
-    },
-    {
-      "id": "passenger-service-continuous",
-      "claim": "The Donner crossing has hosted passenger trains continuously since 1868.",
-      "status": "verified",
-      "sources": ["https://en.wikipedia.org/wiki/California_Zephyr", "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": ""
-    },
-    {
-      "id": "summit-singled-1993",
-      "claim": "In 1993 the railroad singled the summit, taking the original 1868 track over the top of the pass, including the hand-cut Summit Tunnel, out of service and moving all traffic to the 1925 alignment through Tunnel 41.",
-      "status": "verified",
-      "sources": ["https://www.abandonedrails.com/donner-pass"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": "Verification confirmed 6.7 miles of the 1868 alignment were taken out of service."
-    },
-    {
-      "id": "abandoned-tunnels-hike",
-      "claim": "The abandoned 1868 summit tunnels have become one of the Sierra's most visited hikes.",
-      "status": "sourced",
-      "sources": ["https://www.abandonedrails.com/donner-pass"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html", "docs/links.html"],
-      "notes": ""
-    },
-    {
-      "id": "up-sp-merger-1996",
-      "claim": "Union Pacific absorbed the Southern Pacific in 1996, and the line has since been dispatched as UP's Roseville Subdivision.",
-      "status": "verified",
-      "sources": ["https://www.up.com/heritage/history/", "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html"],
-      "notes": "Verification confirmed the merger closed September 1996; subdivision name confirmed in the FRA inventory."
-    },
-    {
-      "id": "tunnel-notching-2009",
-      "claim": "In 2009 Union Pacific notched the crowns of fifteen tunnels between Rocklin and Truckee, more than 18,000 feet of cutting, clearing double-stacked containers over Donner for the first time.",
-      "status": "verified",
-      "sources": ["https://www.uprr.com/newsinfo/releases/service/2009/1123_donnerpass.shtml"],
-      "method": "primary-document",
-      "checked": "2026-08-10",
-      "pages": ["docs/history.html", "docs/carries.html"],
-      "notes": "Verification confirmed the first double-stack train crossed November 19, 2009."
-    },
-    {
-      "id": "chinese-workforce-share",
-      "claim": "By early 1867 about ninety percent of the Central Pacific's construction force, roughly eleven thousand men, was Chinese, most recruited from Guangdong province.",
-      "status": "verified",
-      "sources": ["https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/", "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Verification placed the ninety-percent share by February 1867."
-    },
-    {
-      "id": "wage-disparity",
-      "claim": "Chinese workers were hired at $26 a month against about $35 for white workers; by 1867 their pay had risen to $35, still below white wages, and unlike white workers they paid for their own food and board.",
-      "status": "verified",
-      "sources": ["https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/", "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": ""
-    },
-    {
-      "id": "strike-1867",
-      "claim": "In June 1867 as many as three thousand Chinese workers struck in the high Sierra for equal wages and shorter tunnel shifts; the railroad cut off their food supply and the strike ended after eight days without concessions.",
-      "status": "verified",
-      "sources": ["https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Verification confirmed the strike began June 24, 1867."
-    },
-    {
-      "id": "nitroglycerin-use",
-      "claim": "Nitroglycerin was briefly and lethally in use during the Summit Tunnel work.",
-      "status": "verified",
-      "sources": ["https://www.pbs.org/wgbh/americanexperience/features/tcrr-tunneling-sierra-nevada/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": ""
-    },
-    {
-      "id": "winter-1866-67-storms",
-      "claim": "The winter of 1866-67 brought forty-four storms, and crews lived and worked under the snow in tunnels dug between camp and portal.",
-      "status": "verified",
-      "sources": ["https://www.pbs.org/wgbh/americanexperience/features/tcrr-tunneling-sierra-nevada/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": ""
-    },
-    {
-      "id": "avalanche-dead",
-      "claim": "Avalanches carried workers away during the 1866-67 winter, some found only when the snow melted.",
-      "status": "verified",
-      "sources": ["https://www.pbs.org/wgbh/americanexperience/features/tcrr-tunneling-sierra-nevada/", "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": ""
-    },
-    {
-      "id": "death-toll-range",
-      "claim": "No one recorded the Chinese construction dead carefully; published estimates of deaths on the Central Pacific run from around fifty to more than a thousand.",
-      "status": "contested",
-      "sources": ["https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Contested by design: the range (~50 to 1,000+) and the fact that nobody counted are the historical record. SPEC.md requires publishing as a range, never a number."
-    },
-    {
-      "id": "summit-camp-nhl",
-      "claim": "Summit Camp, the Chinese workers' camp beside the Summit Tunnel, was designated a National Historic Landmark in December 2024.",
-      "status": "verified",
-      "sources": ["https://yubanet.com/regional/donner-summits-historic-chinese-railroad-workers-camp-designated-national-historic-landmark/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Verification confirmed the designation date December 16, 2024."
-    },
-    {
-      "id": "chinatown-census-1870",
-      "claim": "In the 1870 census, 407 of Truckee's 1,467 residents were Chinese, making its Chinatown one of the largest in the Sierra.",
-      "status": "verified",
-      "sources": ["https://www.sierrasun.com/news/a-city-within-a-city-truckees-chinatown/", "https://www.truckeehistory.org/the-trout-creek-outrage.html"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": ""
-    },
-    {
-      "id": "trout-creek-1876",
-      "claim": "In 1876 white vigilantes raided Chinese woodcutters' cabins at Trout Creek, burned them, and shot the fleeing men, killing one; the one man tried for murder was acquitted in nine minutes and the arson charges were dismissed.",
-      "status": "verified",
-      "sources": ["https://www.truckeehistory.org/the-trout-creek-outrage.html", "https://archive.org/details/drivenoutforgott0000pfae"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "See trout-creek-date-discrepancy for a held single-date discrepancy within the 1876 record."
-    },
-    {
-      "id": "trout-creek-date-discrepancy",
-      "claim": "One single-date discrepancy exists between sources in the 1876 Trout Creek record.",
-      "status": "held",
-      "sources": ["https://www.truckeehistory.org/the-trout-creek-outrage.html", "https://archive.org/details/drivenoutforgott0000pfae"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "SPEC.md held claim: verify the specific date before publishing it; the page states the year only and notes the uncertainty in its footer."
-    },
-    {
-      "id": "chinatown-burned-1878",
-      "claim": "In 1878 Truckee's Chinatown was burned and its residents were pushed across the river.",
-      "status": "verified",
-      "sources": ["https://www.sierrasun.com/news/a-city-within-a-city-truckees-chinatown/", "https://archive.org/details/drivenoutforgott0000pfae"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": ""
-    },
-    {
-      "id": "boycott-1886",
-      "claim": "In 1886 town leaders led by newspaperman Charles McGlashan organized a total economic boycott, firing Chinese workers and starving Chinese businesses of custom until the community left Truckee.",
-      "status": "verified",
-      "sources": ["https://moonshineink.com/tahoe-news/the-truckee-method/", "https://archive.org/details/drivenoutforgott0000pfae"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Duration of the expulsion is contested; see expulsion-duration."
-    },
-    {
-      "id": "expulsion-duration",
-      "claim": "The 1886 expulsion emptied Truckee's Chinese community within five weeks by one account and ten weeks by another.",
-      "status": "contested",
-      "sources": ["https://moonshineink.com/tahoe-news/the-truckee-method/", "https://archive.org/details/drivenoutforgott0000pfae"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Contested: sources disagree (five weeks versus ten); the page states both accounts rather than choosing."
-    },
-    {
-      "id": "truckee-method-campaign",
-      "claim": "Promoters named the 1886 boycott the \"Truckee Method\" and campaigned it across California as the respectable way to expel a town's Chinese population.",
-      "status": "verified",
-      "sources": ["https://moonshineink.com/tahoe-news/the-truckee-method/", "https://archive.org/details/drivenoutforgott0000pfae"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "McGlashan himself campaigned the method statewide."
-    },
-    {
-      "id": "chinatown-landmark-plaque",
-      "claim": "Nevada County designated the site of Truckee's Chinatown a historical landmark in 2023, and a memorial plaque was placed downtown in 2024.",
-      "status": "verified",
-      "sources": ["https://www.sierrasun.com/news/a-city-within-a-city-truckees-chinatown/", "https://moonshineink.com/tahoe-news/the-truckee-method/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Verification confirmed the landmark designation June 13, 2023 and the plaque placement May 10, 2024; the page states years only."
-    },
-    {
-      "id": "wider-expulsions-context",
-      "claim": "Truckee's expulsion was one of scores across the West, alongside the 1885 Rock Springs massacre and the Tacoma and Seattle expulsions, in the shadow of the 1882 Chinese Exclusion Act.",
-      "status": "verified",
-      "sources": ["https://www.wyohistory.org/encyclopedia/rock-springs-massacre", "https://www.historylink.org/file/5063", "https://www.archives.gov/milestone-documents/chinese-exclusion-act", "https://archive.org/details/drivenoutforgott0000pfae"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Rock Springs and Tacoma dated 1885; Exclusion Act 1882."
-    },
-    {
-      "id": "rotary-snowplows",
-      "claim": "Union Pacific fights the Donner winter from Roseville with flanger trains, spreaders, and two rotary snowplows, ex-Southern Pacific machines.",
-      "status": "verified",
-      "sources": ["https://railfan.com/union-pacific-runs-rotary-snowplows-on-donner/", "https://www.up.com/aboutup/community/community_ties/0723_snowplow.htm"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Verification identified the rotaries as SPMW 207 and 222, ex-Southern Pacific, based at Roseville."
-    },
-    {
-      "id": "snow-fighting-shifts",
-      "claim": "Enthusiast accounts describe round-the-clock snow-fighting shifts staged from Truckee when major storms arrive.",
-      "status": "sourced",
-      "sources": ["https://railfan.com/union-pacific-runs-rotary-snowplows-on-donner/", "https://www.jakemiillephotography.com/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Attributed on the page to enthusiast accounts rather than railroad records."
-    },
-    {
-      "id": "no-staffing-figures",
-      "claim": "Union Pacific publishes no staffing figures for its mountain snow-fighting operation.",
-      "status": "sourced",
-      "sources": ["https://railfan.com/union-pacific-runs-rotary-snowplows-on-donner/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/built.html"],
-      "notes": "Negative claim; not in today's verified-negatives list."
-    },
-    {
-      "id": "i80-truck-count",
-      "claim": "About 6,500 trucks a day cross the mountain on I-80 at Truckee, per the Caltrans 2024 census at the SR-89 South junction, eastbound leg.",
-      "status": "sourced",
-      "sources": ["https://micrui.github.io/truckee-i80/funding.html"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/carries.html"],
-      "notes": "Sourced via the sibling truckee-i80 site, which carries the Caltrans citations."
-    },
-    {
-      "id": "i80-total-traffic",
-      "claim": "About 37,000 vehicles a day use I-80 at Truckee per the same Caltrans 2024 census row, with nearby segments running 29,500 to 36,000.",
-      "status": "sourced",
-      "sources": ["https://micrui.github.io/truckee-i80/funding.html"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/carries.html"],
-      "notes": ""
-    },
-    {
-      "id": "no-tonnage-figures",
-      "claim": "Union Pacific releases no tonnage figures for the Donner Pass line, and the corridor's freight modal share is not published anywhere.",
-      "status": "sourced",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/carries.html", "docs/history.html"],
-      "notes": "Negative claim; not in today's verified-negatives list."
-    },
-    {
-      "id": "truckee-ridership-series",
-      "claim": "Truckee station ridership by fiscal year was 15,251 (2018), 15,104 (2019), 9,138 (2020), 5,759 (2021), 10,179 (2022), 8,560 (2023), and 14,755 (2024).",
-      "status": "verified",
-      "sources": ["https://www.railpassengers.org/site/assets/files/2567/tru.pdf"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/carries.html"],
-      "notes": ""
-    },
-    {
-      "id": "daily-boardings-derived",
-      "claim": "Roughly forty people a day, on average, board or leave the Zephyr in Truckee in a normal year.",
-      "status": "verified",
-      "sources": ["https://www.railpassengers.org/site/assets/files/2567/tru.pdf"],
-      "method": "derived",
-      "checked": "2026-08-10",
-      "pages": ["docs/carries.html"],
-      "notes": "Arithmetic on the verified ridership series (e.g. FY2024: 14,755 / 365 ≈ 40)."
-    },
-    {
-      "id": "state-rail-plan-reno-bus",
-      "claim": "The California State Rail Plan's vision reaches Reno from the Sacramento Valley by connecting bus, not by train.",
-      "status": "verified",
-      "sources": ["https://dot.ca.gov/-/media/dot-media/programs/rail-mass-transportation/documents/california-state-rail-plan/2024-ca-state-rail-plan-a11y.pdf"],
-      "method": "primary-document",
-      "checked": "2026-08-10",
-      "pages": ["docs/carries.html"],
-      "notes": ""
-    },
-    {
-      "id": "corridor-id-dec-2023",
-      "claim": "In December 2023 the Capitol Corridor, with a Reno/Sparks extension in its scope, entered the federal Corridor Identification planning program, though no service over Donner is designed or funded.",
-      "status": "verified",
-      "sources": ["https://www.trains.com/trn/news-reviews/news-wire/full-list-of-passenger-routes-in-fra-corridor-program-released/", "https://www.capitolcorridor.org/vision-plan/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/carries.html"],
-      "notes": ""
-    },
-    {
-      "id": "no-truck-diversion-study",
-      "claim": "No public agency has published a study of diverting I-80 truck freight to rail over Donner.",
-      "status": "verified",
-      "sources": ["https://dot.ca.gov/-/media/dot-media/programs/rail-mass-transportation/documents/california-state-rail-plan/2024-ca-state-rail-plan-a11y.pdf", "https://www.capitolcorridor.org/vision-plan/"],
-      "method": "derived",
-      "checked": "2026-08-10",
-      "pages": ["docs/carries.html"],
-      "notes": "Verified negative: absence confirmed in today's pass across the corridor planning record."
-    },
-    {
-      "id": "no-electrification-proposal",
-      "claim": "No modern proposal exists to electrify the Donner Pass line.",
-      "status": "verified",
-      "sources": ["https://dot.ca.gov/-/media/dot-media/programs/rail-mass-transportation/documents/california-state-rail-plan/2024-ca-state-rail-plan-a11y.pdf"],
-      "method": "derived",
-      "checked": "2026-08-10",
-      "pages": ["docs/carries.html"],
-      "notes": "Verified negative; distinct from the shelved 1901-02 Southern Pacific electrification survey (sp-surveys-1901)."
-    },
-    {
-      "id": "no-up-public-schedule",
-      "claim": "Union Pacific publishes no public schedule of any kind for freight over Donner Pass.",
-      "status": "verified",
-      "sources": ["https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"],
-      "method": "derived",
-      "checked": "2026-08-10",
-      "pages": ["docs/index.html", "docs/status.html", "docs/history.html"],
-      "notes": "Verified negative: the federal crossing inventory's train count is the only citable freight frequency figure."
-    },
-    {
-      "id": "no-amtrak-official-api",
-      "claim": "Amtrak publishes no official public interface for live train data; this site relies on the community Amtraker mirror of Amtrak's live map.",
-      "status": "verified",
-      "sources": ["https://github.com/piemadd/amtrak", "https://maps.amtrak.com/services/MapDataService/trains/getTrainsData"],
-      "method": "derived",
-      "checked": "2026-08-10",
-      "pages": ["docs/status.html", "docs/links.html"],
-      "notes": "Verified negative."
-    },
-    {
-      "id": "zephyr-stop-times",
-      "claim": "Amtrak's California Zephyr stops in Truckee twice a day, train 5 westbound in late morning (scheduled 10:33 Pacific) and train 6 eastbound in early afternoon (scheduled 14:01 Pacific).",
-      "status": "verified",
-      "sources": ["https://github.com/micrui/truckee-trains/tree/main/data/amtrak"],
-      "method": "own-data",
-      "checked": "2026-08-10",
-      "pages": ["docs/status.html", "docs/history.html", "docs/index.html"],
-      "notes": "Confirmed against this site's own half-hourly observation log."
-    },
-    {
-      "id": "punctuality-log-snapshot",
-      "claim": "As rendered 2026-08-10, both fully logged stops since the record began departed Truckee within 15 minutes of schedule, with a median delay of 5 minutes.",
-      "status": "verified",
-      "sources": ["https://github.com/micrui/truckee-trains/tree/main/data/amtrak"],
-      "method": "own-data",
-      "checked": "2026-08-10",
-      "pages": ["docs/status.html"],
-      "notes": "Snapshot of a page that re-renders through the day; the raw observation log in the repository is the durable record."
-    },
-    {
-      "id": "heirloom-archive-span",
-      "claim": "The Donner Summit Historical Society's Heirloom newsletter archive spans eighteen years of monthly local history, free with an article index.",
-      "status": "sourced",
-      "sources": ["https://www.donnersummithistoricalsociety.org/pages/Newsletters.html"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/links.html"],
-      "notes": ""
-    },
-    {
-      "id": "sp-timetables-span",
-      "claim": "Historic Southern Pacific Sacramento Division employee timetables from 1893 to 1980 are available online.",
-      "status": "sourced",
-      "sources": ["https://wx4.org/to/foam/maps/and_SouthernPacificTimetables.html"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/links.html"],
-      "notes": ""
-    },
-    {
-      "id": "broadcastify-rebroadcast-terms",
-      "claim": "The Donner Pass railroad radio feed is free to listen to, but its terms restrict rebroadcast, so the site links rather than embeds it.",
-      "status": "sourced",
-      "sources": ["https://www.broadcastify.com/listen/feed/43410"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/links.html"],
-      "notes": ""
-    },
-    {
-      "id": "tdrrs-traincam",
-      "claim": "The Truckee Donner Railroad Society operates a live train cam from a caboose beside the line, with railroad radio audio, and maintains a museum and rotary snowplow display.",
-      "status": "sourced",
-      "sources": ["https://tdrrs.org/traincam", "https://tdrrs.org/"],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": ["docs/links.html"],
-      "notes": "Link verified working in today's pass."
-    },
-    {
-      "id": "trains-15-18-press-quote",
-      "claim": "A 2009 press account quoted 15 to 18 trains a day over Donner Pass.",
-      "status": "held",
-      "sources": [],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": [],
-      "notes": "SPEC.md held claim: not published anywhere on the site; the federal 15/day figure is the citable one and is what every page uses."
-    },
-    {
-      "id": "project-cost-2009",
-      "claim": "A figure of roughly $25-30 million circulates for the cost of Union Pacific's 2009 double-stack clearance project.",
-      "status": "held",
-      "sources": [],
-      "method": "secondary",
-      "checked": "2026-08-10",
-      "pages": [],
-      "notes": "SPEC.md held claim: the figure is not in the primary source (UP's own release), so it is held and does not appear on any page."
-    }
-  ]
+ "updated": "2026-08-10",
+ "facts": [
+  {
+   "id": "fra-crossing-id",
+   "claim": "The Bridge Street crossing is FRA crossing 753183A on the Union Pacific Roseville Subdivision at milepost 206.05.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx",
+    "https://github.com/micrui/truckee-trains/tree/main/data/fra"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": "Confirmed against own stored copy data/fra/crossing-753183A.json, pulled monthly with change log."
+  },
+  {
+   "id": "fra-crossing-tracks",
+   "claim": "The federal inventory records 2 main tracks, 1 siding, and 1 other track at the Bridge Street crossing.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx",
+    "https://github.com/micrui/truckee-trains/tree/main/data/fra"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "fra-daily-train-count",
+   "claim": "The federal crossing inventory records 8 day trains and 7 night trains, about 15 through trains every 24 hours including the two Zephyrs, at Bridge Street.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx",
+    "https://github.com/micrui/truckee-trains/tree/main/data/fra"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/index.html",
+    "docs/status.html",
+    "docs/crossing.html",
+    "docs/history.html",
+    "docs/carries.html"
+   ],
+   "notes": "The site consistently uses the federal 15/day figure, not the 15-18 press quote (held; see trains-15-18-press-quote)."
+  },
+  {
+   "id": "fra-crossing-aadt-2016",
+   "claim": "The Bridge Street crossing carries 10,679 vehicles a day per the 2016 count in the federal inventory.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx",
+    "https://github.com/micrui/truckee-trains/tree/main/data/fra"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "fra-warning-devices",
+   "claim": "The Bridge Street crossing is protected by gates with lights per the federal inventory.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx",
+    "https://github.com/micrui/truckee-trains/tree/main/data/fra"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "fra-no-whistle-ban",
+   "claim": "The federal inventory records no whistle ban at Bridge Street, so the train horn rule applies in full.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx",
+    "https://github.com/micrui/truckee-trains/tree/main/data/fra"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "only-grade-crossing-in-town",
+   "claim": "Bridge Street is the only public road crossing of the through tracks at grade in Truckee, and the only such crossing for about eight miles in either direction.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/index.html",
+    "docs/crossing.html"
+   ],
+   "notes": "Confirmed via the nearest-crossing records (Stampede Meadows Road east, Old Donner Summit Road west)."
+  },
+  {
+   "id": "stampede-meadows-crossing",
+   "claim": "The nearest main-line grade crossing to the east is Stampede Meadows Road, eight miles away near Boca, with 1,193 vehicles a day.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "old-donner-summit-crossing",
+   "claim": "The nearest main-line grade crossing to the west is Old Donner Summit Road, fourteen miles away at Norden, with 30 vehicles a day.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "yard-crossings-zero-trains",
+   "claim": "Truckee's three other gated crossings (Donner Pass Road and two on Church Street) reach only yard tracks and show zero through trains in the federal record.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "horn-rule-pattern",
+   "claim": "Federal regulation 49 CFR 222.21 requires the horn to begin 15 to 20 seconds before every public grade crossing, in the pattern two longs, a short, and a long, held until the locomotive occupies the crossing, with no engineer discretion to skip it.",
+   "status": "verified",
+   "sources": [
+    "https://www.law.cornell.edu/cfr/text/49/222.21"
+   ],
+   "method": "primary-document",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": "Page also states the narrow exception: a train stopped close to a crossing may sound less than the full warning."
+  },
+  {
+   "id": "horn-rule-loudness",
+   "claim": "Federal regulation 49 CFR 229.129 sets the horn's loudness at no quieter than 96 and no louder than 110 decibels, measured 100 feet ahead of the locomotive.",
+   "status": "verified",
+   "sources": [
+    "https://www.law.cornell.edu/cfr/text/49/229.129"
+   ],
+   "method": "primary-document",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "accident-record-four-incidents",
+   "claim": "The FRA accident file for Bridge Street holds four incidents (January 1979, May 1981, February 1985, June 1991), all involving automobiles, none with injuries, property damage $500 to $1,000, all in the Southern Pacific era.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": "Form 6180.57 reports; file current to May 2026."
+  },
+  {
+   "id": "no-accidents-since-1991",
+   "claim": "No accident at the Bridge Street crossing has been reported to the FRA in the thirty-five years since June 1991.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": "A verified negative: absence of reports in the federal accident file, current to May 2026."
+  },
+  {
+   "id": "stampede-accidents-seven",
+   "claim": "Stampede Meadows Road has seven accidents on file with the FRA through 2021.",
+   "status": "sourced",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": "Not in today's verified list; drawn from the same FRA accident file as the Bridge Street record."
+  },
+  {
+   "id": "quiet-zone-only-remedy",
+   "claim": "The horn at Bridge Street can be silenced only by the Town establishing a quiet zone under the federal train horn rule, by upgrading the crossing until engineering carries the safety burden.",
+   "status": "sourced",
+   "sources": [
+    "https://railroads.dot.gov/railroad-safety/divisions/crossing-safety-and-trespass-prevention/train-horn-rulequiet-zones",
+    "https://www.cpuc.ca.gov/industries-and-topics/rail-safety/rail-crossings-and-engineering/quiet-zone"
+   ],
+   "method": "primary-document",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "reimagine-bridge-street-goal",
+   "claim": "The Town of Truckee's Reimagine Bridge Street project lists designating a quiet zone as an explicit goal, alongside new vehicle and pedestrian gates, a rebuilt crossing surface, and new signals at Bridge/Donner Pass Road and Bridge/River Street.",
+   "status": "sourced",
+   "sources": [
+    "https://www.townoftruckee.gov/194/Reimagine-Bridge-Street"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "qz-grant-authorization-2022",
+   "claim": "The Truckee town council authorized grant applications toward the roughly $6.3 million Reimagine Bridge Street project in August 2022.",
+   "status": "sourced",
+   "sources": [
+    "https://meetings.municode.com/PublishPage?cid=TRUCKEECA",
+    "https://www.townoftruckee.gov/194/Reimagine-Bridge-Street"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "qz-design-contract-2025",
+   "claim": "The Town awarded a design contract for the Bridge Street crossing project in January 2025.",
+   "status": "sourced",
+   "sources": [
+    "https://meetings.municode.com/PublishPage?cid=TRUCKEECA"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "qz-component-cost-unknown",
+   "claim": "The quiet zone component's own cost and timeline are not yet public.",
+   "status": "held",
+   "sources": [
+    "https://www.townoftruckee.gov/194/Reimagine-Bridge-Street"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": "SPEC.md held claim: quiet zone component cost not yet public; the ledger tracks it. Page states the unknown rather than a number."
+  },
+  {
+   "id": "cp-construction-1863-68",
+   "claim": "The Central Pacific built east from Sacramento into the Sierra between 1863 and 1868, and Truckee grew up around the railroad's yards, ice houses, and mills.",
+   "status": "sourced",
+   "sources": [
+    "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/",
+    "https://www.truckeehistory.org/railroading.html"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "summit-tunnel-opened-1867",
+   "claim": "The Summit Tunnel at Donner Pass, hand-drilled through granite from four faces at once, opened November 30, 1867.",
+   "status": "verified",
+   "sources": [
+    "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/",
+    "https://www.pbs.org/wgbh/americanexperience/features/tcrr-tunneling-sierra-nevada/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html",
+    "docs/built.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "track-reached-truckee-1868",
+   "claim": "Track reached the Truckee River canyon and the settlement that became Truckee in 1868.",
+   "status": "verified",
+   "sources": [
+    "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/",
+    "https://www.truckeehistory.org/railroading.html"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": "Verification confirmed the specific date April 3, 1868; the page states the year only."
+  },
+  {
+   "id": "golden-spike-1869",
+   "claim": "The golden spike joined the Central Pacific and Union Pacific at Promontory on May 10, 1869, making Donner Pass the mountain gateway of the first transcontinental railroad.",
+   "status": "sourced",
+   "sources": [
+    "https://www.nps.gov/gosp/index.htm"
+   ],
+   "method": "agency-record",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "snowsheds-extent",
+   "claim": "Wooden snowsheds built from the 1860s-70s eventually roofed tens of miles of mountain track and made year-round operation over the pass possible.",
+   "status": "verified",
+   "sources": [
+    "https://www.donnersummithistoricalsociety.org/pages/Newsletters.html"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": "Verification confirmed roughly 40 miles of sheds at peak; the page says tens of miles."
+  },
+  {
+   "id": "sp-surveys-1901",
+   "claim": "In the early Southern Pacific era, surveys for a long summit tunnel and for electrification were studied and shelved.",
+   "status": "verified",
+   "sources": [
+    "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": "Verification placed the surveys in 1901-02."
+  },
+  {
+   "id": "cab-forwards-from-1910",
+   "claim": "From 1910 the cab-forward steam locomotives, built backward so crews would not suffocate in the snowsheds, took over the mountain.",
+   "status": "verified",
+   "sources": [
+    "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "tunnel-41-1925",
+   "claim": "A second track over the summit opened in 1925, carried through the two-mile Tunnel 41 under Mount Judah, making the mountain a double-track railroad.",
+   "status": "verified",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tunnel_No._41",
+    "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": "Verification confirmed Tunnel 41 length as 10,322 feet, consistent with the page's two-mile description."
+  },
+  {
+   "id": "steam-end-1957-1958",
+   "claim": "The last cab-forward crossed Donner in 1957 and the final steam excursion ran in October 1958; diesels have run the pass since.",
+   "status": "verified",
+   "sources": [
+    "https://www.californiarailroad.museum/store/product/last-run-of-a-cab-forward-over-donner-pass",
+    "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "surviving-cab-forward-csrm",
+   "claim": "The sole surviving cab-forward locomotive stands in the California State Railroad Museum.",
+   "status": "sourced",
+   "sources": [
+    "https://www.californiarailroad.museum/store/product/last-run-of-a-cab-forward-over-donner-pass"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "zephyr-renamed-1983",
+   "claim": "Amtrak's train over Donner, until then the San Francisco Zephyr, was renamed the California Zephyr in 1983 when its mid-route alignment shifted to Colorado.",
+   "status": "verified",
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Francisco_Zephyr",
+    "https://en.wikipedia.org/wiki/California_Zephyr"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": "Verification confirmed the renaming took effect July 1983; the page states the year only."
+  },
+  {
+   "id": "passenger-service-continuous",
+   "claim": "The Donner crossing has hosted passenger trains continuously since 1868.",
+   "status": "verified",
+   "sources": [
+    "https://en.wikipedia.org/wiki/California_Zephyr",
+    "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "summit-singled-1993",
+   "claim": "In 1993 the railroad singled the summit, taking the original 1868 track over the top of the pass, including the hand-cut Summit Tunnel, out of service and moving all traffic to the 1925 alignment through Tunnel 41.",
+   "status": "verified",
+   "sources": [
+    "https://www.abandonedrails.com/donner-pass"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": "Verification confirmed 6.7 miles of the 1868 alignment were taken out of service."
+  },
+  {
+   "id": "abandoned-tunnels-hike",
+   "claim": "The abandoned 1868 summit tunnels have become one of the Sierra's most visited hikes.",
+   "status": "sourced",
+   "sources": [
+    "https://www.abandonedrails.com/donner-pass"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html",
+    "docs/links.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "up-sp-merger-1996",
+   "claim": "Union Pacific absorbed the Southern Pacific in 1996, and the line has since been dispatched as UP's Roseville Subdivision.",
+   "status": "verified",
+   "sources": [
+    "https://www.up.com/heritage/history/",
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": "Verification confirmed the merger closed September 1996; subdivision name confirmed in the FRA inventory."
+  },
+  {
+   "id": "tunnel-notching-2009",
+   "claim": "In 2009 Union Pacific notched the crowns of fifteen tunnels between Rocklin and Truckee, more than 18,000 feet of cutting, clearing double-stacked containers over Donner for the first time.",
+   "status": "verified",
+   "sources": [
+    "https://www.uprr.com/newsinfo/releases/service/2009/1123_donnerpass.shtml"
+   ],
+   "method": "primary-document",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html",
+    "docs/carries.html"
+   ],
+   "notes": "Verification confirmed the first double-stack train crossed November 19, 2009."
+  },
+  {
+   "id": "chinese-workforce-share",
+   "claim": "By early 1867 about ninety percent of the Central Pacific's construction force, roughly eleven thousand men, was Chinese, most recruited from Guangdong province.",
+   "status": "verified",
+   "sources": [
+    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/",
+    "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Verification placed the ninety-percent share by February 1867."
+  },
+  {
+   "id": "wage-disparity",
+   "claim": "Chinese workers were hired at $26 a month against about $35 for white workers; by 1867 their pay had risen to $35, still below white wages, and unlike white workers they paid for their own food and board.",
+   "status": "verified",
+   "sources": [
+    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/",
+    "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "strike-1867",
+   "claim": "In June 1867 as many as three thousand Chinese workers struck in the high Sierra for equal wages and shorter tunnel shifts; the railroad cut off their food supply and the strike ended after eight days without concessions.",
+   "status": "verified",
+   "sources": [
+    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Verification confirmed the strike began June 24, 1867."
+  },
+  {
+   "id": "nitroglycerin-use",
+   "claim": "Nitroglycerin was briefly and lethally in use during the Summit Tunnel work.",
+   "status": "verified",
+   "sources": [
+    "https://www.pbs.org/wgbh/americanexperience/features/tcrr-tunneling-sierra-nevada/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "winter-1866-67-storms",
+   "claim": "The winter of 1866-67 brought forty-four storms, and crews lived and worked under the snow in tunnels dug between camp and portal.",
+   "status": "verified",
+   "sources": [
+    "https://www.pbs.org/wgbh/americanexperience/features/tcrr-tunneling-sierra-nevada/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "avalanche-dead",
+   "claim": "Avalanches carried workers away during the 1866-67 winter, some found only when the snow melted.",
+   "status": "verified",
+   "sources": [
+    "https://www.pbs.org/wgbh/americanexperience/features/tcrr-tunneling-sierra-nevada/",
+    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "death-toll-range",
+   "claim": "No one recorded the Chinese construction dead carefully; published estimates of deaths on the Central Pacific run from around fifty to more than a thousand.",
+   "status": "contested",
+   "sources": [
+    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Contested by design: the range (~50 to 1,000+) and the fact that nobody counted are the historical record. SPEC.md requires publishing as a range, never a number."
+  },
+  {
+   "id": "summit-camp-nhl",
+   "claim": "Summit Camp, the Chinese workers' camp beside the Summit Tunnel, was designated a National Historic Landmark in December 2024.",
+   "status": "verified",
+   "sources": [
+    "https://yubanet.com/regional/donner-summits-historic-chinese-railroad-workers-camp-designated-national-historic-landmark/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Verification confirmed the designation date December 16, 2024."
+  },
+  {
+   "id": "chinatown-census-1870",
+   "claim": "In the 1870 census, 407 of Truckee's 1,467 residents were Chinese, making its Chinatown one of the largest in the Sierra.",
+   "status": "verified",
+   "sources": [
+    "https://www.sierrasun.com/news/a-city-within-a-city-truckees-chinatown/",
+    "https://www.truckeehistory.org/the-trout-creek-outrage.html"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "trout-creek-1876",
+   "claim": "In 1876 white vigilantes raided Chinese woodcutters' cabins at Trout Creek, burned them, and shot the fleeing men, killing one; the one man tried for murder was acquitted in nine minutes and the arson charges were dismissed.",
+   "status": "verified",
+   "sources": [
+    "https://www.truckeehistory.org/the-trout-creek-outrage.html",
+    "https://archive.org/details/drivenoutforgott0000pfae"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "See trout-creek-date-discrepancy for a held single-date discrepancy within the 1876 record."
+  },
+  {
+   "id": "trout-creek-date-discrepancy",
+   "claim": "One single-date discrepancy exists between sources in the 1876 Trout Creek record.",
+   "status": "held",
+   "sources": [
+    "https://www.truckeehistory.org/the-trout-creek-outrage.html",
+    "https://archive.org/details/drivenoutforgott0000pfae"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "SPEC.md held claim: verify the specific date before publishing it; the page states the year only and notes the uncertainty in its footer."
+  },
+  {
+   "id": "chinatown-burned-1878",
+   "claim": "In 1878 Truckee's Chinatown was burned and its residents were pushed across the river.",
+   "status": "verified",
+   "sources": [
+    "https://www.sierrasun.com/news/a-city-within-a-city-truckees-chinatown/",
+    "https://archive.org/details/drivenoutforgott0000pfae"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "boycott-1886",
+   "claim": "In 1886 town leaders led by newspaperman Charles McGlashan organized a total economic boycott, firing Chinese workers and starving Chinese businesses of custom until the community left Truckee.",
+   "status": "verified",
+   "sources": [
+    "https://moonshineink.com/tahoe-news/the-truckee-method/",
+    "https://archive.org/details/drivenoutforgott0000pfae"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Duration of the expulsion is contested; see expulsion-duration."
+  },
+  {
+   "id": "expulsion-duration",
+   "claim": "The 1886 expulsion emptied Truckee's Chinese community within five weeks by one account and ten weeks by another.",
+   "status": "contested",
+   "sources": [
+    "https://moonshineink.com/tahoe-news/the-truckee-method/",
+    "https://archive.org/details/drivenoutforgott0000pfae"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Contested: sources disagree (five weeks versus ten); the page states both accounts rather than choosing."
+  },
+  {
+   "id": "truckee-method-campaign",
+   "claim": "Promoters named the 1886 boycott the \"Truckee Method\" and campaigned it across California as the respectable way to expel a town's Chinese population.",
+   "status": "verified",
+   "sources": [
+    "https://moonshineink.com/tahoe-news/the-truckee-method/",
+    "https://archive.org/details/drivenoutforgott0000pfae"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "McGlashan himself campaigned the method statewide."
+  },
+  {
+   "id": "chinatown-landmark-plaque",
+   "claim": "Nevada County designated the site of Truckee's Chinatown a historical landmark in 2023, and a memorial plaque was placed downtown in 2024.",
+   "status": "verified",
+   "sources": [
+    "https://www.sierrasun.com/news/a-city-within-a-city-truckees-chinatown/",
+    "https://moonshineink.com/tahoe-news/the-truckee-method/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Verification confirmed the landmark designation June 13, 2023 and the plaque placement May 10, 2024; the page states years only."
+  },
+  {
+   "id": "wider-expulsions-context",
+   "claim": "Truckee's expulsion was one of scores across the West, alongside the 1885 Rock Springs massacre and the Tacoma and Seattle expulsions, in the shadow of the 1882 Chinese Exclusion Act.",
+   "status": "verified",
+   "sources": [
+    "https://www.wyohistory.org/encyclopedia/rock-springs-massacre",
+    "https://www.historylink.org/file/5063",
+    "https://www.archives.gov/milestone-documents/chinese-exclusion-act",
+    "https://archive.org/details/drivenoutforgott0000pfae"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Rock Springs and Tacoma dated 1885; Exclusion Act 1882."
+  },
+  {
+   "id": "rotary-snowplows",
+   "claim": "Union Pacific fights the Donner winter from Roseville with flanger trains, spreaders, and two rotary snowplows, ex-Southern Pacific machines.",
+   "status": "verified",
+   "sources": [
+    "https://railfan.com/union-pacific-runs-rotary-snowplows-on-donner/",
+    "https://www.up.com/aboutup/community/community_ties/0723_snowplow.htm"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Verification identified the rotaries as SPMW 207 and 222, ex-Southern Pacific, based at Roseville."
+  },
+  {
+   "id": "snow-fighting-shifts",
+   "claim": "Enthusiast accounts describe round-the-clock snow-fighting shifts staged from Truckee when major storms arrive.",
+   "status": "sourced",
+   "sources": [
+    "https://railfan.com/union-pacific-runs-rotary-snowplows-on-donner/",
+    "https://www.jakemiillephotography.com/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Attributed on the page to enthusiast accounts rather than railroad records."
+  },
+  {
+   "id": "no-staffing-figures",
+   "claim": "Union Pacific publishes no staffing figures for its mountain snow-fighting operation.",
+   "status": "sourced",
+   "sources": [
+    "https://railfan.com/union-pacific-runs-rotary-snowplows-on-donner/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/built.html"
+   ],
+   "notes": "Negative claim; not in today's verified-negatives list."
+  },
+  {
+   "id": "i80-truck-count",
+   "claim": "About 6,500 trucks a day cross the mountain on I-80 at Truckee, per the Caltrans 2024 census at the SR-89 South junction, eastbound leg.",
+   "status": "sourced",
+   "sources": [
+    "https://micrui.github.io/truckee-i80/funding.html"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/carries.html"
+   ],
+   "notes": "Sourced via the sibling truckee-i80 site, which carries the Caltrans citations."
+  },
+  {
+   "id": "i80-total-traffic",
+   "claim": "About 37,000 vehicles a day use I-80 at Truckee per the same Caltrans 2024 census row, with nearby segments running 29,500 to 36,000.",
+   "status": "sourced",
+   "sources": [
+    "https://micrui.github.io/truckee-i80/funding.html"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/carries.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "no-tonnage-figures",
+   "claim": "Union Pacific releases no tonnage figures for the Donner Pass line, and the corridor's freight modal share is not published anywhere.",
+   "status": "sourced",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/carries.html",
+    "docs/history.html"
+   ],
+   "notes": "Negative claim; not in today's verified-negatives list."
+  },
+  {
+   "id": "truckee-ridership-series",
+   "claim": "Truckee station ridership by fiscal year was 15,251 (2018), 15,104 (2019), 9,138 (2020), 5,759 (2021), 10,179 (2022), 8,560 (2023), and 14,755 (2024).",
+   "status": "verified",
+   "sources": [
+    "https://www.railpassengers.org/site/assets/files/2567/tru.pdf"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/carries.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "daily-boardings-derived",
+   "claim": "Roughly forty people a day, on average, board or leave the Zephyr in Truckee in a normal year.",
+   "status": "verified",
+   "sources": [
+    "https://www.railpassengers.org/site/assets/files/2567/tru.pdf"
+   ],
+   "method": "derived",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/carries.html"
+   ],
+   "notes": "Arithmetic on the verified ridership series (e.g. FY2024: 14,755 / 365 \u2248 40)."
+  },
+  {
+   "id": "state-rail-plan-reno-bus",
+   "claim": "The California State Rail Plan's vision reaches Reno from the Sacramento Valley by connecting bus, not by train.",
+   "status": "verified",
+   "sources": [
+    "https://dot.ca.gov/-/media/dot-media/programs/rail-mass-transportation/documents/california-state-rail-plan/2024-ca-state-rail-plan-a11y.pdf"
+   ],
+   "method": "primary-document",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/carries.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "corridor-id-dec-2023",
+   "claim": "In December 2023 the Capitol Corridor, with a Reno/Sparks extension in its scope, entered the federal Corridor Identification planning program, though no service over Donner is designed or funded.",
+   "status": "verified",
+   "sources": [
+    "https://www.trains.com/trn/news-reviews/news-wire/full-list-of-passenger-routes-in-fra-corridor-program-released/",
+    "https://www.capitolcorridor.org/vision-plan/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/carries.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "no-truck-diversion-study",
+   "claim": "No public agency has published a study of diverting I-80 truck freight to rail over Donner.",
+   "status": "verified",
+   "sources": [
+    "https://dot.ca.gov/-/media/dot-media/programs/rail-mass-transportation/documents/california-state-rail-plan/2024-ca-state-rail-plan-a11y.pdf",
+    "https://www.capitolcorridor.org/vision-plan/"
+   ],
+   "method": "derived",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/carries.html"
+   ],
+   "notes": "Verified negative: absence confirmed in today's pass across the corridor planning record."
+  },
+  {
+   "id": "no-electrification-proposal",
+   "claim": "No modern proposal exists to electrify the Donner Pass line.",
+   "status": "verified",
+   "sources": [
+    "https://dot.ca.gov/-/media/dot-media/programs/rail-mass-transportation/documents/california-state-rail-plan/2024-ca-state-rail-plan-a11y.pdf"
+   ],
+   "method": "derived",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/carries.html"
+   ],
+   "notes": "Verified negative; distinct from the shelved 1901-02 Southern Pacific electrification survey (sp-surveys-1901)."
+  },
+  {
+   "id": "no-up-public-schedule",
+   "claim": "Union Pacific publishes no public schedule of any kind for freight over Donner Pass.",
+   "status": "verified",
+   "sources": [
+    "https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/crossing.aspx"
+   ],
+   "method": "derived",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/index.html",
+    "docs/status.html",
+    "docs/history.html"
+   ],
+   "notes": "Verified negative: the federal crossing inventory's train count is the only citable freight frequency figure."
+  },
+  {
+   "id": "no-amtrak-official-api",
+   "claim": "Amtrak publishes no official public interface for live train data; this site relies on the community Amtraker mirror of Amtrak's live map.",
+   "status": "verified",
+   "sources": [
+    "https://github.com/piemadd/amtrak",
+    "https://maps.amtrak.com/services/MapDataService/trains/getTrainsData"
+   ],
+   "method": "derived",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/status.html",
+    "docs/links.html"
+   ],
+   "notes": "Verified negative."
+  },
+  {
+   "id": "zephyr-stop-times",
+   "claim": "Amtrak's California Zephyr stops in Truckee twice a day, train 5 westbound in late morning (scheduled 10:33 Pacific) and train 6 eastbound in early afternoon (scheduled 14:01 Pacific).",
+   "status": "verified",
+   "sources": [
+    "https://github.com/micrui/truckee-trains/tree/main/data/amtrak"
+   ],
+   "method": "own-data",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/status.html",
+    "docs/history.html",
+    "docs/index.html"
+   ],
+   "notes": "Confirmed against this site's own half-hourly observation log."
+  },
+  {
+   "id": "punctuality-log-snapshot",
+   "claim": "As rendered 2026-08-10, both fully logged stops since the record began departed Truckee within 15 minutes of schedule, with a median delay of 5 minutes.",
+   "status": "verified",
+   "sources": [
+    "https://github.com/micrui/truckee-trains/tree/main/data/amtrak"
+   ],
+   "method": "own-data",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/status.html"
+   ],
+   "notes": "Snapshot of a page that re-renders through the day; the raw observation log in the repository is the durable record."
+  },
+  {
+   "id": "heirloom-archive-span",
+   "claim": "The Donner Summit Historical Society's Heirloom newsletter archive spans eighteen years of monthly local history, free with an article index.",
+   "status": "sourced",
+   "sources": [
+    "https://www.donnersummithistoricalsociety.org/pages/Newsletters.html"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/links.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "sp-timetables-span",
+   "claim": "Historic Southern Pacific Sacramento Division employee timetables from 1893 to 1980 are available online.",
+   "status": "sourced",
+   "sources": [
+    "https://wx4.org/to/foam/maps/and_SouthernPacificTimetables.html"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/links.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "broadcastify-rebroadcast-terms",
+   "claim": "The Donner Pass railroad radio feed is free to listen to, but its terms restrict rebroadcast, so the site links rather than embeds it.",
+   "status": "sourced",
+   "sources": [
+    "https://www.broadcastify.com/listen/feed/43410"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/links.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "tdrrs-traincam",
+   "claim": "The Truckee Donner Railroad Society operates a live train cam from a caboose beside the line, with railroad radio audio, and maintains a museum and rotary snowplow display.",
+   "status": "sourced",
+   "sources": [
+    "https://tdrrs.org/traincam",
+    "https://tdrrs.org/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/links.html"
+   ],
+   "notes": "Link verified working in today's pass."
+  },
+  {
+   "id": "trains-15-18-press-quote",
+   "claim": "A 2009 press account quoted 15 to 18 trains a day over Donner Pass.",
+   "status": "held",
+   "sources": [],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [],
+   "notes": "SPEC.md held claim: not published anywhere on the site; the federal 15/day figure is the citable one and is what every page uses."
+  },
+  {
+   "id": "project-cost-2009",
+   "claim": "A figure of roughly $25-30 million circulates for the cost of Union Pacific's 2009 double-stack clearance project.",
+   "status": "held",
+   "sources": [],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [],
+   "notes": "SPEC.md held claim: the figure is not in the primary source (UP's own release), so it is held and does not appear on any page."
+  },
+  {
+   "id": "bigboy-2024-donner-truckee",
+   "claim": "UP 4014 crossed Donner Pass July 14, 2024, the first 4-8-8-4 to do so, with whistle-stops at Colfax and Truckee after Roseville display days July 12-13.",
+   "status": "verified",
+   "sources": [
+    "https://railfan.com/big-boy-reconquers-the-west/",
+    "https://markets.financialcontent.com/stocks/article/bizwire-2024-5-9-union-pacifics-big-boy-no-4014-returns-this-summer-with-public-display-days-in-roseville-california-and-ogden-utah"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/bigboy.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "bigboy-2026-cancelled",
+   "claim": "A Truckee whistle-stop scheduled April 12, 2026 was cancelled when snow forecast rerouted 4014 through the Feather River Canyon.",
+   "status": "verified",
+   "sources": [
+    "https://www.trains.com/pro/freight/class-i/union-pacific-big-boy-no-4014-taking-weather-related-detour/",
+    "https://business.truckee.com/events/details/big-boy-4014-world-s-largest-steam-engine-truckee-whistlestop-83711"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/bigboy.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "up-steam-tracker",
+   "claim": "Union Pacific publishes its steam tour schedule, a live GPS tracker during tours, and a free Steam Club notification list.",
+   "status": "verified",
+   "sources": [
+    "https://www.up.com/about-us/history/steam/schedule",
+    "https://www.up.com/about-us/history/steam/track",
+    "https://www.up.com/about-us/history/steam/join"
+   ],
+   "method": "primary-document",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/bigboy.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "steam-donner-1981-1999",
+   "claim": "UP 844 and 3985 reportedly crossed Donner together in 1999 and 1981.",
+   "status": "held",
+   "sources": [
+    "https://www.pentrex.com/DVD-Steam-Over-Donner-844-and-3985-Doubleheader!_DRSOD"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/bigboy.html"
+   ],
+   "notes": "Enthusiast/commercial sources only; page labels the dates unverified."
+  },
+  {
+   "id": "depot-1900",
+   "claim": "The Truckee depot was built in 1900 by Southern Pacific of local pine after the 1869-era original burned, was sold to Nevada County in 1985, and now holds the Amtrak waiting room, visitor center, and two museums.",
+   "status": "verified",
+   "sources": [
+    "https://www.truckeehistory.org/truckee-train-depot.html",
+    "https://www.greatamericanstations.com/stations/truckee-ca-tru/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/walk.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "rotary-210-display",
+   "claim": "SP rotary snowplow 210 (Alco 1937, donated by CSRM in 2007) and 1930 wreck derrick 7050 stand in the Truckee Railyard beside the main line.",
+   "status": "verified",
+   "sources": [
+    "https://tdrrs.org/railyard",
+    "https://tdrrs.org/museum/equipment/rotary.htm"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/walk.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "chinatown-plaque-jibboom",
+   "claim": "The Chinatown memorial plaque, dedicated May 10, 2024, stands on Jibboom Street in front of the Old Jail Museum; Truckee's first Chinatown grew along Jibboom Street from 1867.",
+   "status": "verified",
+   "sources": [
+    "https://www.theunion.com/news/community/plaque-commemorating-truckees-chinatowns-dedicated-last-friday/article_45f7c1fc-121f-11ef-bf10-a36ff61461e7.html",
+    "https://www.sierrasun.com/news/historic-chinatown-in-truckee-honored-with-new-landmark-plaque/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/walk.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "roundhouse-1882-1955",
+   "claim": "A 22-stall granite roundhouse built 1882 in the Truckee yards was demolished in 1955; in the 1870s Truckee shipped more freight than any other Central Pacific point; no marker stands at the site.",
+   "status": "verified",
+   "sources": [
+    "https://www.truckeehistory.org/the-central-pacific-roundhouse-fire-of-1869.html",
+    "https://www.truckeehistory.org/truckee-railyard-millsite-history.html"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/walk.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "tunnel-access-status",
+   "claim": "The abandoned 1868 summit grade and tunnels are Union Pacific private property, posted against trespassing, widely walked with no formal public access; UP stated in 2021 it still uses the area and is open to history-honoring proposals; the National Trust listed the tunnels among America's most endangered historic places in 2021.",
+   "status": "sourced",
+   "sources": [
+    "https://asamnews.com/2022/05/29/the-signficiance-of-the-summit-tunnels-to-the-first-transcontinental-railroad/",
+    "https://www.sierrasun.com/news/the-push-for-a-national-landmark-at-donner-pass/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/walk.html"
+   ],
+   "notes": "UP quote verified via AsAmNews; the Smithsonian original was unreachable at check time."
+  },
+  {
+   "id": "hobart-mills-narrow-gauge",
+   "claim": "The Sierra Nevada Wood and Lumber Company opened Hobart Mills north of Truckee in 1897 and built over 75 miles of narrow-gauge track 1896-1936, closing 1936-37.",
+   "status": "verified",
+   "sources": [
+    "https://www.truckeehistory.org/hobart-mills.html",
+    "http://www.pacificng.com/template.php?page=roads%2Fnv%2Fsnwl%2Findex.htm"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "ltrt-1900-1943",
+   "claim": "The Lake Tahoe Railway and Transportation Co. ran a 16-mile narrow-gauge line from Truckee to Tahoe City from 1900; SP standard-gauged it in 1926 and abandoned it in 1943; the grade is the bike path beside SR 89.",
+   "status": "verified",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lake_Tahoe_Railway_and_Transportation_Company",
+    "https://www.hmdb.org/m.asp?m=169783"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "boca-loyalton",
+   "claim": "The Boca and Loyalton Railroad ran from Boca to Loyalton from 1901; accounts of its end differ between 1916 and 1918.",
+   "status": "contested",
+   "sources": [
+    "https://www.truckeehistory.org/tracking-the-railroad-from-boca-to-loyalton.html",
+    "https://www.sierrasun.com/news/boca-to-loyalton-railroad-short-line-short-life/"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": "End date conflicts across sources; page states the range."
+  },
+  {
+   "id": "truckee-lumber-1873-1909",
+   "claim": "The Truckee Lumber Company ran narrow-gauge logging lines from 1873; its Truckee mill closed in 1909.",
+   "status": "verified",
+   "sources": [
+    "https://www.pacificng.com/template.php?page=roads%2Fca%2Ftlco%2Findex.htm"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/history.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "junction-configuration-2026",
+   "claim": "As observed August 2026, the Bridge Street/Donner Pass Road intersection operates as an all-way stop with stop signs on three of four approaches, Bridge/West River has no traffic control, and pedestrian crossings near the railroad crossing are unmarked.",
+   "status": "sourced",
+   "sources": [
+    "data/observations/junction-2026-08.md"
+   ],
+   "method": "own-data",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": "Maintainer's dated ground observation; checkable on site. Re-check after any Town changes."
+  },
+  {
+   "id": "bridge-shortcut-routing",
+   "claim": "Bridge Street is the through connection between SR 89 South and SR 267 via downtown; the alternative connection is Interstate 80.",
+   "status": "verified",
+   "sources": [
+    "https://www.openstreetmap.org/#map=16/39.3270/-120.1840"
+   ],
+   "method": "derived",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": "Road-network geography, checkable on any map."
+  },
+  {
+   "id": "reimagine-signals-both",
+   "claim": "The Reimagine Bridge Street project scope includes new traffic signals at Bridge/Donner Pass Road and Bridge/River Street.",
+   "status": "verified",
+   "sources": [
+    "https://www.townoftruckee.gov/194/Reimagine-Bridge-Street"
+   ],
+   "method": "primary-document",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/crossing.html"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "day-trip-museums",
+   "claim": "WPRM Portola (largest diesel collections, run-a-locomotive), CSRM Sacramento (cab-forward 4294, daily 10-5), NSRM Carson City (65 pieces, 31 V&T, Thu-Mon), and Donner Memorial State Park (Chinese railroad workers exhibit, daily 10-5) are the regional exhibits.",
+   "status": "sourced",
+   "sources": [
+    "https://wplives.org/",
+    "https://www.californiarailroad.museum/visit/general-information",
+    "https://www.carsonrailroadmuseum.org/hours-and-location/",
+    "https://www.parks.ca.gov/DonnerMemorial"
+   ],
+   "method": "secondary",
+   "checked": "2026-08-10",
+   "pages": [
+    "docs/walk.html"
+   ],
+   "notes": "WPRM hours/drive time not confirmed on official site; page directs readers to check hours."
+  }
+ ]
 }

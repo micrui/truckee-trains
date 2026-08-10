@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://micrui.github.io/truckee-trains/sitemap.xml
