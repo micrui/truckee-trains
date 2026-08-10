@@ -13,6 +13,10 @@ Same rules as truckee-flights and truckee-i80:
 - **Falsifiability is the admission criterion.** Unfalsifiable claims appear only as attributed
   statements. Political questions stay open; the site supplies the record.
 - No self-referential neutrality statements, no apologetic framing, no editorializing labels.
+- No aphorisms and no imported frames. A sentence may not bring in an image or domain
+  (military, conquest, personified laws or records) that the subject itself did not supply.
+  Transitions state the topic change plainly. Directness is not softening: state the hard
+  fact concretely instead of decorating it or deleting it.
 - No em-dashes anywhere, in site prose or repo docs. Use commas, colons, semicolons,
   parentheses, or a new sentence.
 - Every number traces to a linked source. Corrections are dated addenda, never silent.
