@@ -131,6 +131,8 @@ def render():
   <a href="https://github.com/piemadd/amtrak">Amtraker</a> mirror of Amtrak's live map, polled
   on a half-hour cadence; Amtrak publishes no official interface. The raw observation log is
   in <a href="https://github.com/micrui/truckee-trains/tree/main/data/amtrak">the repository</a>.
+  Tickets and the full route are at
+  <a href="https://www.amtrak.com/california-zephyr-train">Amtrak's California Zephyr page</a>.
   Freight has no public schedule of any kind; the federal crossing inventory's figure for this
   line is 15 trains a day.</p>
   <div class="foot">
