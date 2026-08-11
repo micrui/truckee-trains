@@ -135,10 +135,9 @@ def render():
     Truckee station and accumulates the punctuality record. It updates through the day and
     settles by the following morning. Last rendered {now}.
   </p>
-  <p><strong>Tickets:</strong> book from Truckee on
-  <a href="https://www.amtrak.com/stations/tru">Amtrak's Truckee station page</a> (code TRU);
-  the full route is the <a href="https://www.amtrak.com/california-zephyr-train">California
-  Zephyr</a>.</p>
+  <p><strong>Tickets:</strong> book at
+  <a href="https://www.amtrak.com/home">amtrak.com</a> and enter Truckee, CA (TRU) as your
+  station; Amtrak's booking page does not accept a prefilled link.</p>
   {stats}
   <div class="table-scroll"><table>
     <thead><tr><th>Date</th><th>Train</th><th>Scheduled</th><th>Actual</th><th>Delay (min)</th><th>Status</th></tr></thead>
