@@ -69,7 +69,14 @@ def render():
 
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     html = f"""<meta charset="utf-8">
-<title>truckee-trains: the Zephyr at Truckee</title>
+<title>Truckee train schedule and status: the California Zephyr at Truckee</title>
+<meta name="description" content="Is the train on time in Truckee? Scheduled versus actual California Zephyr times at the Truckee Amtrak station, logged half-hourly, with the accumulating punctuality record.">
+<link rel="canonical" href="https://micrui.github.io/truckee-trains/status.html">
+<meta property="og:title" content="Truckee train schedule and status: the California Zephyr at Truckee">
+<meta property="og:description" content="Scheduled versus actual California Zephyr times at Truckee, logged half-hourly.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://micrui.github.io/truckee-trains/status.html">
+<meta name="twitter:card" content="summary">
 <style>
   :root {{
     color-scheme: light;
@@ -96,6 +103,11 @@ def render():
   body {{ background: var(--page); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     line-height: 1.6; margin: 0; padding: 48px 20px 72px; }}
   .wrap {{ max-width: 800px; margin: 0 auto; }}
+  .nav {{ font-size: 12.5px; margin: 0 0 26px; color: var(--muted);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }}
+  .nav a {{ color: var(--ink-2); text-decoration: none; margin-right: 14px; white-space: nowrap; }}
+  .nav a:hover {{ color: var(--accent); }}
+  .nav a.here {{ color: var(--ink); font-weight: 650; }}
   .eyebrow {{ font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
     margin: 0 0 10px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }}
   .eyebrow a {{ color: inherit; }}
@@ -114,6 +126,7 @@ def render():
   .foot {{ margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--grid); color: var(--muted); font-size: 12.5px; max-width: 74ch; }}
 </style>
 <div class="wrap">
+  <nav class="nav"><a href="index.html">home</a><a href="status.html" class="here">the Zephyr</a><a href="crossing.html">the crossing</a><a href="history.html">history</a><a href="built.html">labor</a><a href="carries.html">what it carries</a><a href="walk.html">train walk</a><a href="bigboy.html">Big Boy</a><a href="links.html">watching</a></nav>
   <p class="eyebrow"><a href="./">truckee-trains</a> · status</p>
   <h1>The Zephyr at Truckee</h1>
   <p class="standfirst">
