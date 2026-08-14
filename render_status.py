@@ -135,6 +135,10 @@ def render():
     Truckee station and accumulates the punctuality record. It updates through the day and
     settles by the following morning. Last rendered {now}.
   </p>
+  <p><strong>Where is it right now:</strong> live position of
+  <a href="https://railrat.net/trains/5/">train 5 westbound</a> and
+  <a href="https://railrat.net/trains/6/">train 6 eastbound</a>, or the
+  <a href="https://asm.transitdocs.com/">national live map</a>.</p>
   <p><strong>Tickets:</strong> book at
   <a href="https://www.amtrak.com/home">amtrak.com</a> and enter Truckee, CA (TRU) as your
   station; Amtrak's booking page does not accept a prefilled link.</p>
