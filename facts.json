@@ -256,29 +256,29 @@
    "claim": "The Truckee town council authorized grant applications toward the roughly $6.3 million Reimagine Bridge Street project in August 2022.",
    "status": "sourced",
    "sources": [
-    "https://meetings.municode.com/PublishPage?cid=TRUCKEECA",
+    "https://www.townoftruckee.gov/agendacenter",
     "https://www.townoftruckee.gov/194/Reimagine-Bridge-Street"
    ],
    "method": "agency-record",
-   "checked": "2026-08-10",
+   "checked": "2026-08-24",
    "pages": [
     "docs/crossing.html"
    ],
-   "notes": ""
+   "notes": "meetings.municode.com endpoint began returning 500 by Aug 2026; source link moved to the Town agenda center."
   },
   {
    "id": "qz-design-contract-2025",
    "claim": "The Town awarded a design contract for the Bridge Street crossing project in January 2025.",
    "status": "sourced",
    "sources": [
-    "https://meetings.municode.com/PublishPage?cid=TRUCKEECA"
+    "https://www.townoftruckee.gov/agendacenter"
    ],
    "method": "agency-record",
-   "checked": "2026-08-10",
+   "checked": "2026-08-24",
    "pages": [
     "docs/crossing.html"
    ],
-   "notes": ""
+   "notes": "meetings.municode.com endpoint began returning 500 by Aug 2026; source link moved to the Town agenda center."
   },
   {
    "id": "qz-component-cost-unknown",
@@ -635,10 +635,10 @@
    "claim": "Summit Camp, the Chinese workers' camp beside the Summit Tunnel, was designated a National Historic Landmark in December 2024.",
    "status": "verified",
    "sources": [
-    "https://yubanet.com/regional/donner-summits-historic-chinese-railroad-workers-camp-designated-national-historic-landmark/"
+    "https://yubanet.com/regional/summit-camp-designated-national-historic-landmark/"
    ],
    "method": "secondary",
-   "checked": "2026-08-10",
+   "checked": "2026-08-24",
    "pages": [
     "docs/built.html"
    ],
