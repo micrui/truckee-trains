@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10",
+ "updated": "2026-10-01",
  "facts": [
   {
    "id": "fra-crossing-id",
@@ -534,44 +534,44 @@
    "claim": "By early 1867 about ninety percent of the Central Pacific's construction force, roughly eleven thousand men, was Chinese, most recruited from Guangdong province.",
    "status": "verified",
    "sources": [
-    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/",
+    "https://chineserailroadworkers.stanford.edu/faqs/",
     "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm"
    ],
    "method": "secondary",
-   "checked": "2026-08-10",
+   "checked": "2026-10-01",
    "pages": [
     "docs/built.html"
    ],
-   "notes": "Verification placed the ninety-percent share by February 1867."
+   "notes": "Verification placed the ninety-percent share by February 1867. Source URL updated 2026-10-01: the Stanford project site moved from web.stanford.edu/group/chineserailroad (old URL now redirects) to chineserailroadworkers.stanford.edu; the FAQ page there states the same figures."
   },
   {
    "id": "wage-disparity",
    "claim": "Chinese workers were hired at $26 a month against about $35 for white workers; by 1867 their pay had risen to $35, still below white wages, and unlike white workers they paid for their own food and board.",
    "status": "verified",
    "sources": [
-    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/",
+    "https://chineserailroadworkers.stanford.edu/faqs/",
     "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm"
    ],
    "method": "secondary",
-   "checked": "2026-08-10",
+   "checked": "2026-10-01",
    "pages": [
     "docs/built.html"
    ],
-   "notes": ""
+   "notes": "Source URL updated 2026-10-01: the Stanford project site moved from web.stanford.edu/group/chineserailroad (old URL now redirects) to chineserailroadworkers.stanford.edu; the FAQ page there states the same figures."
   },
   {
    "id": "strike-1867",
    "claim": "In June 1867 as many as three thousand Chinese workers struck in the high Sierra for equal wages and shorter tunnel shifts; the railroad cut off their food supply and the strike ended after eight days without concessions.",
    "status": "verified",
    "sources": [
-    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/"
+    "https://chineserailroadworkers.stanford.edu/faqs/"
    ],
    "method": "secondary",
-   "checked": "2026-08-10",
+   "checked": "2026-10-01",
    "pages": [
     "docs/built.html"
    ],
-   "notes": "Verification confirmed the strike began June 24, 1867."
+   "notes": "Verification confirmed the strike began June 24, 1867. Source URL updated 2026-10-01: the Stanford project site moved from web.stanford.edu/group/chineserailroad (old URL now redirects) to chineserailroadworkers.stanford.edu; the FAQ page there states the same figures."
   },
   {
    "id": "nitroglycerin-use",
@@ -607,28 +607,28 @@
    "status": "verified",
    "sources": [
     "https://www.pbs.org/wgbh/americanexperience/features/tcrr-tunneling-sierra-nevada/",
-    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/"
+    "https://chineserailroadworkers.stanford.edu/faqs/"
    ],
    "method": "secondary",
-   "checked": "2026-08-10",
+   "checked": "2026-10-01",
    "pages": [
     "docs/built.html"
    ],
-   "notes": ""
+   "notes": "Source URL updated 2026-10-01: the Stanford project site moved from web.stanford.edu/group/chineserailroad (old URL now redirects) to chineserailroadworkers.stanford.edu; the FAQ page there states the same figures."
   },
   {
    "id": "death-toll-range",
    "claim": "No one recorded the Chinese construction dead carefully; published estimates of deaths on the Central Pacific run from around fifty to more than a thousand.",
    "status": "contested",
    "sources": [
-    "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/faqs/"
+    "https://chineserailroadworkers.stanford.edu/faqs/"
    ],
    "method": "secondary",
-   "checked": "2026-08-10",
+   "checked": "2026-10-01",
    "pages": [
     "docs/built.html"
    ],
-   "notes": "Contested by design: the range (~50 to 1,000+) and the fact that nobody counted are the historical record. SPEC.md requires publishing as a range, never a number."
+   "notes": "Contested by design: the range (~50 to 1,000+) and the fact that nobody counted are the historical record. SPEC.md requires publishing as a range, never a number. Source URL updated 2026-10-01: the Stanford project site moved from web.stanford.edu/group/chineserailroad (old URL now redirects) to chineserailroadworkers.stanford.edu; the FAQ page there states the same figures."
   },
   {
    "id": "summit-camp-nhl",
