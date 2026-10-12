@@ -1,7 +1,9 @@
 name: amtrak-poll
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # Off-peak minutes: GitHub drops scheduled events at congested times
+    # (:00/:30 especially), which had degraded this to ~5 fires a day.
+    - cron: "7,37 * * * *"
   workflow_dispatch:
 jobs:
   poll:
