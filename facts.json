@@ -417,28 +417,30 @@
    "status": "verified",
    "sources": [
     "https://www.californiarailroad.museum/store/product/last-run-of-a-cab-forward-over-donner-pass",
+    "https://web.archive.org/web/20260924061421/https://www.californiarailroad.museum/store/product/last-run-of-a-cab-forward-over-donner-pass",
     "https://www.psrhs.org/the-mountain/cprrsp-donner-route-timeline/"
    ],
    "method": "secondary",
-   "checked": "2026-08-10",
+   "checked": "2026-11-01",
    "pages": [
     "docs/history.html"
    ],
-   "notes": ""
+   "notes": "2026-11-01: the museum removed the store product page (the store itself is still up); a September 2026 Wayback snapshot is added beside the citation on the page. The PSRHS timeline still answers and carries the dates."
   },
   {
    "id": "surviving-cab-forward-csrm",
    "claim": "The sole surviving cab-forward locomotive stands in the California State Railroad Museum.",
    "status": "sourced",
    "sources": [
-    "https://www.californiarailroad.museum/store/product/last-run-of-a-cab-forward-over-donner-pass"
+    "https://www.californiarailroad.museum/store/product/last-run-of-a-cab-forward-over-donner-pass",
+    "https://web.archive.org/web/20260924061421/https://www.californiarailroad.museum/store/product/last-run-of-a-cab-forward-over-donner-pass"
    ],
    "method": "secondary",
-   "checked": "2026-08-10",
+   "checked": "2026-11-01",
    "pages": [
     "docs/history.html"
    ],
-   "notes": ""
+   "notes": "2026-11-01: the museum removed the store product page; a September 2026 Wayback snapshot is recorded here. Worth replacing with a museum collection page for the surviving cab-forward when one is found."
   },
   {
    "id": "zephyr-renamed-1983",
