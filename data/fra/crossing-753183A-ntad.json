@@ -24,7 +24,7 @@
  "NumberOfSidingTracks": 1,
  "NumberOfTransitTracks": 0,
  "NumberOfYardTracks": 0,
- "OBJECTID": 19026,
+ "OBJECTID": 18971,
  "OTHRTRK": 1,
  "OperatingRailroadType": "Primary",
  "ParentRailroadCode": "-1",
@@ -48,5 +48,5 @@
  "URL": "https://safetydata.fra.dot.gov/OfficeofSafety/PublicSite/Crossing/Crossing.aspx?phasetype=C&rpttype=I&txtcrossingnum=753183A",
  "WDCODE": "All other Gates",
  "WhistleBan": "No",
- "_pulled": "2026-08-24"
+ "_pulled": "2026-11-03"
 }
