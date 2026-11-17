@@ -832,7 +832,7 @@
    "claim": "About 6,500 trucks a day cross the mountain on I-80 at Truckee, per the Caltrans 2024 census at the SR-89 South junction, eastbound leg.",
    "status": "sourced",
    "sources": [
-    "https://micrui.github.io/truckee-i80/funding.html"
+    "https://micrui.net/truckee/i80/funding.html"
    ],
    "method": "secondary",
    "checked": "2026-08-10",
@@ -846,7 +846,7 @@
    "claim": "About 37,000 vehicles a day use I-80 at Truckee per the same Caltrans 2024 census row, with nearby segments running 29,500 to 36,000.",
    "status": "sourced",
    "sources": [
-    "https://micrui.github.io/truckee-i80/funding.html"
+    "https://micrui.net/truckee/i80/funding.html"
    ],
    "method": "secondary",
    "checked": "2026-08-10",

@@ -2,7 +2,8 @@
 
 Public record of the railroad through Truckee: the Union Pacific line over Donner Pass, its
 history, governance (including train-horn rules and the federal Quiet Zone process), traffic,
-and accident record. Site will publish via GitHub Pages from `/docs`.
+and accident record. Site: https://micrui.net/truckee/trains (GitHub Pages publishes `/docs`;
+micrui.net serves the pages from there, so GitHub Pages stays on).
 
 ## Voice and editorial rules (non-negotiable)
 

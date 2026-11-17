@@ -7,7 +7,7 @@ sound), traffic, and the official accident record, every claim traceable to its 
 Sibling projects: [truckee-flights](https://github.com/micrui/truckee-flights) (the airport),
 [truckee-i80](https://github.com/micrui/truckee-i80) (the freeway).
 
-**Site: https://micrui.github.io/truckee-trains**
+**Site: https://micrui.net/truckee/trains**
 
 - The Zephyr at Truckee: scheduled versus actual times, logged half-hourly, accumulating.
 - The Bridge Street crossing: the federal record, the horn rule, and the Town's quiet
